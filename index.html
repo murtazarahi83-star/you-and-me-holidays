@@ -4,94 +4,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover exceptional holidays around the world with You & Me Holidays. Let us help plan your next journey.">
+  <meta name="description" content="Discover worldwide holidays with You & Me Holidays. Explore destinations and plan your next journey with our travel team.">
   <title>You & Me Holidays | Your Journey, Our Passion</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
   <style>
+    :root {
+      --navy: #102b50;
+      --blue: #1769aa;
+      --light-blue: #eaf4fc;
+      --text: #25364b;
+      --muted: #68788c;
+      --white: #ffffff;
+    }
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
+    html { scroll-behavior: smooth; }
+
     body {
-      font-family: Arial, sans-serif;
-      color: #172438;
-      background: #fff;
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text);
+      background: var(--white);
       line-height: 1.6;
     }
 
     a { text-decoration: none; color: inherit; }
 
+    .container {
+      width: min(1160px, 90%);
+      margin: auto;
+    }
+
     header {
-      height: 82px;
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 18px rgba(16,43,80,.07);
+    }
+
+    .navbar {
+      min-height: 78px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 7%;
-      background: white;
+      gap: 20px;
     }
 
     .logo {
-      font-size: 23px;
-      font-weight: 700;
-      letter-spacing: -1px;
-      color: #142b46;
+      font-size: 21px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -.7px;
     }
 
-    .logo span { color: #bd9860; }
+    .logo span { color: var(--blue); }
 
-    nav { display: flex; gap: 28px; align-items: center; }
-    nav a { font-size: 14px; font-weight: 600; }
-    nav a:hover { color: #bd9860; }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    nav a:hover { color: var(--blue); }
 
     .nav-button, .button {
-      background: #bd9860;
-      color: white;
-      padding: 13px 23px;
-      border-radius: 4px;
-      font-weight: 700;
       display: inline-block;
+      background: var(--blue);
+      color: white;
+      padding: 12px 23px;
+      border-radius: 7px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .nav-button:hover, .button:hover {
+      background: var(--navy);
+      transform: translateY(-2px);
     }
 
     .hero {
-      min-height: 610px;
-      background:
-        linear-gradient(90deg, rgba(8,25,43,.78), rgba(8,25,43,.12)),
-        url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2000&q=85")
-        center/cover;
+      min-height: 590px;
       display: flex;
       align-items: center;
-      padding: 70px 9%;
       color: white;
+      background:
+        linear-gradient(90deg, rgba(8,31,59,.82), rgba(8,31,59,.18)),
+        url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2000&q=85') center/cover;
     }
 
-    .hero-content { max-width: 650px; }
+    .hero-content { max-width: 680px; padding: 100px 0; }
+
     .eyebrow {
-      color: #e6c48f;
       text-transform: uppercase;
       letter-spacing: 3px;
       font-size: 12px;
-      font-weight: bold;
+      font-weight: 700;
+      margin-bottom: 18px;
+      color: #c8e6ff;
     }
 
-    h1 {
-      font-family: Georgia, serif;
-      font-size: clamp(42px, 6vw, 72px);
-      line-height: 1.1;
-      margin: 22px 0;
-      font-weight: 500;
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      line-height: 1.15;
     }
 
-    .hero p { font-size: 18px; max-width: 520px; margin-bottom: 30px; }
+    h1 { font-size: clamp(42px, 6vw, 68px); margin-bottom: 22px; }
 
-    section { padding: 85px 8%; }
+    .hero p {
+      font-size: 18px;
+      max-width: 550px;
+      color: #edf5ff;
+      margin-bottom: 30px;
+    }
 
-    .section-heading { text-align: center; margin-bottom: 45px; }
+    .button-light {
+      display: inline-block;
+      padding: 12px 23px;
+      border-radius: 7px;
+      background: white;
+      color: var(--navy);
+      font-weight: 700;
+      margin-left: 10px;
+    }
+
+    section { padding: 85px 0; }
+
+    .section-heading {
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 42px;
+    }
+
     .section-heading h2 {
-      font-family: Georgia, serif;
-      font-size: 38px;
-      font-weight: 500;
-      margin: 10px 0;
+      font-size: clamp(30px, 4vw, 42px);
+      color: var(--navy);
+      margin-bottom: 13px;
     }
 
-    .section-heading p { color: #687585; }
+    .section-heading p { color: var(--muted); }
 
     .destinations {
       display: grid;
@@ -100,170 +157,283 @@
     }
 
     .destination {
-      position: relative;
-      min-height: 330px;
-      border-radius: 8px;
+      border-radius: 13px;
       overflow: hidden;
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: end;
-      color: white;
+      background: white;
+      box-shadow: 0 8px 30px rgba(16,43,80,.09);
+      transition: .25s;
     }
 
-    .destination::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(transparent, rgba(0,0,0,.72));
+    .destination:hover { transform: translateY(-6px); }
+
+    .destination img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
     }
 
-    .destination div { position: relative; padding: 25px; }
-    .destination h3 { font-family: Georgia, serif; font-size: 28px; }
-    .destination p { font-size: 14px; }
+    .destination-info { padding: 22px; }
 
-    .dubai {
-      background-image: url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80");
-    }
-    .maldives {
-      background-image: url("https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=900&q=80");
-    }
-    .italy {
-      background-image: url("https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80");
+    .destination-info h3 {
+      color: var(--navy);
+      font-size: 21px;
+      margin-bottom: 7px;
     }
 
-    .about {
-      background: #f5f6f7;
-      text-align: center;
-    }
-
-    .about-content { max-width: 750px; margin: auto; }
-    .about h2 {
-      font-family: Georgia, serif;
-      font-size: 38px;
-      font-weight: 500;
-      margin: 12px 0 20px;
-    }
-
-    .about p { color: #657181; margin-bottom: 25px; }
-
-    .contact {
-      text-align: center;
-      background: #142b46;
-      color: white;
-    }
-
-    .contact h2 {
-      font-family: Georgia, serif;
-      font-size: 40px;
-      font-weight: 500;
+    .destination-info p {
+      color: var(--muted);
+      font-size: 14px;
       margin-bottom: 15px;
     }
 
-    .contact p { color: #d6dce3; margin-bottom: 28px; }
+    .destination-info a {
+      color: var(--blue);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .about { background: var(--light-blue); }
+
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 14px;
+    }
+
+    .about-copy h2 {
+      color: var(--navy);
+      font-size: 39px;
+      margin-bottom: 20px;
+    }
+
+    .about-copy p {
+      color: var(--muted);
+      margin-bottom: 17px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      text-align: center;
+    }
+
+    .feature {
+      padding: 28px 20px;
+      border: 1px solid #e5edf5;
+      border-radius: 12px;
+    }
+
+    .feature-icon {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .feature h3 {
+      color: var(--navy);
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .feature p { color: var(--muted); font-size: 14px; }
+
+    .contact {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 39px;
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      color: #d6e5f4;
+      margin-bottom: 25px;
+    }
+
+    .contact .button {
+      background: white;
+      color: var(--navy);
+    }
 
     footer {
-      background: #0c1b2c;
-      color: #d6dce3;
+      background: #091d36;
+      color: #d4dfeb;
+      padding: 35px 0;
       text-align: center;
-      padding: 28px 15px;
       font-size: 13px;
     }
 
-    @media (max-width: 750px) {
-      header { padding: 18px 5%; height: auto; flex-wrap: wrap; gap: 15px; }
-      nav { width: 100%; gap: 15px; flex-wrap: wrap; }
-      nav a { font-size: 12px; }
-      .nav-button { padding: 9px 12px; }
-      .hero { min-height: 540px; padding: 55px 7%; }
-      .destinations { grid-template-columns: 1fr; }
-      section { padding: 65px 6%; }
+    footer strong { color: white; }
+
+    @media(max-width: 800px) {
+      .navbar { flex-wrap: wrap; padding: 17px 0; }
+      nav { width: 100%; justify-content: center; flex-wrap: wrap; gap: 15px; }
+      .nav-button { display: none; }
+      .hero { min-height: 520px; }
+      .destinations, .features { grid-template-columns: 1fr 1fr; }
+      .about-layout { grid-template-columns: 1fr; }
+    }
+
+    @media(max-width: 520px) {
+      .destinations, .features { grid-template-columns: 1fr; }
+      .hero p { font-size: 16px; }
+      .button-light { margin: 12px 0 0; }
+      section { padding: 65px 0; }
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <a href="#" class="logo">YOU <span>&</span> ME HOLIDAYS</a>
+<header>
+  <div class="container navbar">
+    <a class="logo" href="#home">YOU & ME <span>HOLIDAYS</span></a>
 
     <nav>
       <a href="#home">Home</a>
       <a href="#destinations">Destinations</a>
       <a href="#about">About Us</a>
-      <a href="#contact" class="nav-button">Plan Your Holiday</a>
+      <a href="#contact">Contact</a>
     </nav>
-  </header>
 
-  <main>
-    <section class="hero" id="home">
+    <a class="nav-button" href="#contact">Plan Your Holiday</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container">
       <div class="hero-content">
         <div class="eyebrow">Discover the world with us</div>
         <h1>Your Journey,<br>Our Passion.</h1>
         <p>
-          From unforgettable escapes to extraordinary experiences,
-          let us help you discover a world of possibilities.
+          From beautiful beaches to unforgettable city escapes,
+          let us help you plan a holiday worth remembering.
         </p>
-        <a href="#destinations" class="button">Explore Destinations</a>
+        <a class="button" href="#destinations">Explore Holidays</a>
+        <a class="button-light" href="#contact">Get a Quote</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="destinations">
+  <section id="destinations">
+    <div class="container">
       <div class="section-heading">
-        <div class="eyebrow">Find your next escape</div>
         <h2>Explore Our Destinations</h2>
-        <p>Inspiring places for your next unforgettable journey.</p>
+        <p>Discover inspiring places around the world and start planning your next adventure.</p>
       </div>
 
       <div class="destinations">
-        <a href="#contact" class="destination dubai">
-          <div>
+        <article class="destination">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80" alt="Dubai skyline">
+          <div class="destination-info">
             <h3>Dubai</h3>
-            <p>Luxury, sunshine and unforgettable experiences.</p>
+            <p>Experience spectacular architecture, luxury stays and exciting adventures.</p>
+            <a href="#contact">Plan a Dubai Holiday →</a>
           </div>
-        </a>
+        </article>
 
-        <a href="#contact" class="destination maldives">
-          <div>
+        <article class="destination">
+          <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=900&q=80" alt="Maldives tropical island">
+          <div class="destination-info">
             <h3>Maldives</h3>
-            <p>Escape to beautiful islands and turquoise waters.</p>
+            <p>Enjoy turquoise waters, beautiful islands and peaceful escapes.</p>
+            <a href="#contact">Plan a Maldives Holiday →</a>
           </div>
-        </a>
+        </article>
 
-        <a href="#contact" class="destination italy">
-          <div>
+        <article class="destination">
+          <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80" alt="Italian coastal village">
+          <div class="destination-info">
             <h3>Italy</h3>
-            <p>Discover culture, romance and beautiful coastlines.</p>
+            <p>Discover charming towns, remarkable culture and unforgettable scenery.</p>
+            <a href="#contact">Plan an Italy Holiday →</a>
           </div>
-        </a>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="about" id="about">
-      <div class="about-content">
+  <section class="about" id="about">
+    <div class="container about-layout">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1100&q=85" alt="Beautiful mountain lake travel scenery">
+      </div>
+
+      <div class="about-copy">
         <div class="eyebrow">Welcome to You & Me Holidays</div>
-        <h2>Travel Made Personal</h2>
+        <h2>Every Journey Begins With a Dream</h2>
         <p>
-          Every journey is different. We believe your holiday should
-          reflect your interests, your style and the experiences
-          you want to remember.
+          We believe every holiday should be special. Whether you are
+          planning a romantic escape, a family adventure or a relaxing
+          break, we want to help you find the right journey.
         </p>
-        <a href="#contact" class="button">Discover More</a>
+        <p>
+          Our aim is to make holiday planning straightforward,
+          personal and enjoyable, from your first enquiry to your travel plans.
+        </p>
+        <a class="button" href="#contact">Talk to Our Team</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="contact" id="contact">
-      <div class="eyebrow">Your next adventure starts here</div>
-      <h2>Let's Plan Something Special</h2>
-      <p>Tell us where you dream of going. Let's start planning.</p>
-      <a href="mailto:" class="button">Contact Our Team</a>
-    </section>
-  </main>
+  <section>
+    <div class="container">
+      <div class="section-heading">
+        <h2>Why Plan With Us?</h2>
+        <p>A thoughtful approach to making your next holiday memorable.</p>
+      </div>
 
-  <footer>
-    <p>© 2026 You & Me Holidays. All rights reserved.</p>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">✈️</div>
+          <h3>Worldwide Travel</h3>
+          <p>Explore destinations and holiday ideas across the globe.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">🤝</div>
+          <h3>Personal Assistance</h3>
+          <p>Speak with our team about your travel plans and preferences.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">🌍</div>
+          <h3>Made for You</h3>
+          <p>Holiday ideas shaped around the experience you want.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Let's Plan Your Next Holiday</h2>
+      <p>Tell us where you would love to go. Your next journey starts here.</p>
+      <a class="button" href="mailto:">Make an Enquiry</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <strong>YOU & ME HOLIDAYS</strong>
     <p>Your Journey, Our Passion.</p>
-  </footer>
+    <p>© 2026 You & Me Holidays. All rights reserved.</p>
+  </div>
+</footer>
 
 </body>
 </html>
