@@ -1236,7 +1236,83 @@
 
     const whatsappURL = 'https://wa.me/923498519613?text=' + encodeURIComponent(message);
 
-    window.open(whatsappURL, '_blank', 'noopener,noreferrer');
+   
+const whatsappWindow = window.open(whatsappURL, '_blank');
+
+document.body.innerHTML = `
+  <div style="
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    background:#f4f8ff;
+    font-family:Arial,sans-serif;
+    color:#17345b;
+    box-sizing:border-box;
+  ">
+    <div style="
+      max-width:540px;
+      width:100%;
+      padding:50px 30px;
+      text-align:center;
+      background:white;
+      border-radius:20px;
+      box-shadow:0 12px 40px rgba(25,65,115,.10);
+      box-sizing:border-box;
+    ">
+      <div style="
+        width:78px;height:78px;
+        margin:0 auto 25px;
+        display:grid;place-items:center;
+        border-radius:50%;
+        background:#e8f7ef;
+        color:#20a466;
+        font-size:42px;
+      ">✓</div>
+
+      <h1 style="font-size:34px;margin:0 0 15px;">
+        Thank You!
+      </h1>
+
+      <p style="color:#64748b;line-height:1.7;">
+        Thank you for choosing You & Me Holidays.
+        We look forward to helping you plan your next journey.
+      </p>
+
+      <div style="
+        margin:25px 0;padding:15px;
+        background:#f0f6ff;border-radius:12px;
+        font-size:14px;line-height:1.6;
+      ">
+        <strong>One last step!</strong><br>
+        Please send your prepared enquiry in WhatsApp
+        by pressing the Send button.
+      </div>
+
+      <a href="${whatsappURL}" target="_blank"
+         rel="noopener noreferrer"
+         style="
+           display:inline-block;padding:14px 25px;
+           border-radius:8px;background:#1769d2;
+           color:white;text-decoration:none;font-weight:bold;
+         ">
+        Open WhatsApp Enquiry
+      </a>
+
+      <p style="margin-top:30px;font-weight:bold;color:#1769d2;">
+        You & Me Holidays
+      </p>
+      <p style="color:#64748b;">Your Journey, Our Passion.</p>
+
+      <a href="index.html"
+         style="color:#1769d2;text-decoration:none;">
+        Back to Home
+      </a>
+    </div>
+  </div>
+`;
+
   });
 </script>
 
