@@ -905,16 +905,40 @@
         width:100%;
       }
 
-      .whatsapp-float {
-        right:15px;
-        bottom:15px;
-        width:53px;
-        height:53px;
-      }
-    }
-  </style>
 
-  <script type="application/ld+json">
+.whatsapp-float {
+  right:15px;
+  bottom:15px;
+  width:53px;
+  height:53px;
+}
+
+/* You & Me Holidays Logo */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.navbar .logo img {
+  display: block;
+  width: 220px;
+  height: 65px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+@media (max-width: 768px) {
+  .navbar .logo img {
+    width: 175px;
+    height: 55px;
+  }
+}
+</style>
+
+<script type="application/ld+json">
+
   {
     "@context": "https://schema.org",
     "@type": "Organization",
