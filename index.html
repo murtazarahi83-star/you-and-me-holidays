@@ -1598,117 +1598,126 @@ const commonFields = [
 /* FORM FIELDS */
 const fieldSets = {
 
-  package: [
-    ...commonFields,
 
-    {
-      name:"destination",
-      label:"Destination",
-      type:"text",
-      placeholder:"e.g. Dubai, Maldives, Italy",
-      required:true
-    },
-    {
-      name:"departure",
-      label:"Departure Airport",
-      type:"text",
-      placeholder:"e.g. London Heathrow"
-    },
-    {
-      name:"departDate",
-      label:"Departure Date",
-      type:"date",
-      required:true
-    },
-    {
-      name:"returnDate",
-      label:"Return Date",
-      type:"date"
-    },
-    {
-      name:"adults",
-      label:"Number of Adults",
-      type:"number",
-      min:1,
-      value:2,
-      required:true
-    },
-   {
-  name:"childrenAges",
-  label:"Children's Ages (if applicable)",
-  type:"text",
-  placeholder:"e.g. 5 years, 9 years"
-},
-    {
-      name:"budget",
-      label:"Approximate Total Budget",
-      type:"select",
-      options:[
-        "Below £1,000",
-        "£1,000 - £2,000",
-        "£2,000 - £3,000",
-        "£3,000 - £5,000",
-        "£5,000 - £8,000",
-        "£8,000+",
-        "Not decided yet"
-      ]
-    },
-    {
-      name:"hotel",
-      label:"Hotel Category",
-      type:"select",
-      options:[
-        "3 Star",
-        "4 Star",
-        "5 Star",
-        "Luxury / Premium",
-        "Not sure yet"
-      ]
-    },
-    {
-      name:"board",
-      label:"Board Basis",
-      type:"select",
-      options:[
-        "Room Only",
-        "Bed & Breakfast",
-        "Half Board",
-        "Full Board",
-        "All Inclusive",
-        "Not sure yet"
-      ]
-    },
-    {
-      name:"holidayStyle",
-      label:"Holiday Type",
-      type:"select",
-      options:[
-        "Luxury Holiday",
-        "Honeymoon",
-        "Family Holiday",
-        "Beach Holiday",
-        "City Break",
-        "Tailor-Made",
-        "Other"
-      ]
-    },
-    {
-      name:"duration",
-      label:"Duration / Nights",
-      type:"text",
-      placeholder:"e.g. 7 nights"
-    },
-    {
-      name:"requirements",
-      label:"Additional Requirements",
-      type:"textarea",
-      full:true,
-      placeholder:"Tell us about your preferences or special requests..."
-    }
-  ],
+package: [
+  ...commonFields,
 
-  flight: [
-    ...commonFields,
+  {
+    name:"destination",
+    label:"Destination",
+    type:"text",
+    placeholder:"e.g. Dubai, Maldives, Italy",
+    required:true
+  },
+  {
+    name:"departure",
+    label:"Departure Airport",
+    type:"text",
+    placeholder:"e.g. London Heathrow"
+  },
+  {
+    name:"departDate",
+    label:"Departure Date",
+    type:"date",
+    required:true
+  },
+  {
+    name:"returnDate",
+    label:"Return Date",
+    type:"date"
+  },
+  {
+    name:"adults",
+    label:"Number of Adults",
+    type:"number",
+    min:1,
+    value:2,
+    required:true
+  },
+  {
+    name:"children",
+    label:"Number of Children",
+    type:"number",
+    min:0,
+    value:0
+  },
+  {
+    name:"childrenAges",
+    label:"Children's Ages (if applicable)",
+    type:"text",
+    placeholder:"e.g. 5 years, 9 years"
+  },
+  {
+    name:"budget",
+    label:"Approximate Total Budget",
+    type:"select",
+    options:[
+      "Below £1,000",
+      "£1,000 - £2,000",
+      "£2,000 - £3,000",
+      "£3,000 - £5,000",
+      "£5,000 - £8,000",
+      "£8,000+",
+      "Not decided yet"
+    ]
+  },
+  {
+    name:"hotel",
+    label:"Hotel Category",
+    type:"select",
+    options:[
+      "3 Star",
+      "4 Star",
+      "5 Star",
+      "Luxury / Premium",
+      "Not sure yet"
+    ]
+  },
+  {
+    name:"board",
+    label:"Board Basis",
+    type:"select",
+    options:[
+      "Room Only",
+      "Bed & Breakfast",
+      "Half Board",
+      "Full Board",
+      "All Inclusive",
+      "Not sure yet"
+    ]
+  },
+  {
+    name:"holidayStyle",
+    label:"Holiday Type",
+    type:"select",
+    options:[
+      "Luxury Holiday",
+      "Honeymoon",
+      "Family Holiday",
+      "Beach Holiday",
+      "City Break",
+      "Tailor-Made",
+      "Other"
+    ]
+  },
+  {
+    name:"duration",
+    label:"Duration / Nights",
+    type:"text",
+    placeholder:"e.g. 7 nights"
+  },
+  {
+    name:"requirements",
+    label:"Additional Requirements",
+    type:"textarea",
+    full:true,
+    placeholder:"Tell us about your preferences or special requests..."
+  }
+],
+
+flight: [
+  ...commonFields,
+
 
     {
       name:"tripType",
