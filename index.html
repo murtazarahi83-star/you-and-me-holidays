@@ -2,510 +2,1498 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="FN2ZjWa2neb8nCGQ5fsI3RKhKVjGf1WEhvIV6YzPB0A" />
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>You & Me Holidays | Worldwide Holidays & Travel</title>
-<meta name="description" content="Discover worldwide holidays with You & Me Holidays. Explore luxury escapes, family holidays, romantic honeymoons, flights and hotels. Get your personalised holiday quote today.">
-<meta name="author" content="You & Me Holidays">
-<meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <meta name="google-site-verification" content="FN2ZjWa2neb8nCGQ5fsI3RKhKVjGf1WEhvIV6YzPB0A">
 
-<style>
-:root {
-  --navy:#102b50;
-  --blue:#1769aa;
-  --blue-dark:#10558e;
-  --pale:#edf6fd;
-  --text:#26384c;
-  --muted:#68788c;
-  --border:#e3ebf3;
-  --shadow:0 12px 35px rgba(16,43,80,.09);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;color:var(--text);line-height:1.65}
-a{text-decoration:none;color:inherit}
-button,input,select,textarea{font:inherit}
-.container{width:min(1160px,90%);margin:auto}
-.topbar{background:var(--navy);color:white;padding:8px;text-align:center;font-size:12px}
-header{background:white;position:sticky;top:0;z-index:100;box-shadow:0 3px 18px #102b5010}
-.navbar{min-height:80px;display:flex;justify-content:space-between;align-items:center;gap:20px}
-.logo{font-size:21px;font-weight:800;color:var(--navy);white-space:nowrap}
-.logo span,.footer-brand span{color:var(--blue)}
-nav{display:flex;align-items:center;gap:20px}
-nav a{font-size:13px;font-weight:700;color:var(--navy)}
-nav a:hover{color:var(--blue)}
-.button{display:inline-block;background:var(--blue);color:white;border:0;padding:13px 23px;border-radius:7px;font-weight:700;cursor:pointer;transition:.2s}
-.button:hover{background:var(--blue-dark);transform:translateY(-2px)}
-.button-outline{display:inline-block;padding:12px 22px;border:1px solid white;color:white;border-radius:7px;margin-left:8px}
-.menu-toggle{display:none;border:0;background:var(--pale);padding:9px 12px;border-radius:6px;font-size:20px}
-.hero{min-height:580px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,#081f3bd9,#081f3b30),url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2000&q=85') center/cover}
-.hero-content{max-width:690px;padding:90px 0}
-.eyebrow{text-transform:uppercase;color:var(--blue);letter-spacing:3px;font-size:11px;font-weight:800;margin-bottom:14px}
-.hero .eyebrow{color:#c8e6ff}
-h1,h2{font-family:'Playfair Display',Georgia,serif;line-height:1.16}
-h1{font-size:clamp(43px,6vw,70px);margin-bottom:22px}
-.hero p{color:#edf5ff;font-size:17px;max-width:550px;margin-bottom:30px}
-section{padding:78px 0}
-.section-heading{max-width:680px;text-align:center;margin:0 auto 40px}
-.section-heading h2{color:var(--navy);font-size:clamp(30px,4vw,43px);margin-bottom:13px}
-.section-heading p{color:var(--muted)}
-.destination-grid,.holiday-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:23px}
-.destination-card{border-radius:13px;overflow:hidden;background:white;box-shadow:var(--shadow);transition:.2s}
-.destination-card:hover{transform:translateY(-4px)}
-.destination-card img{width:100%;height:220px;object-fit:cover;display:block}
-.destination-info{padding:20px}
-.destination-info h3,.holiday-card h3{color:var(--navy);margin-bottom:8px}
-.destination-info p,.holiday-card p{color:var(--muted);font-size:14px;margin-bottom:13px}
-.text-link{color:var(--blue);font-weight:700;font-size:14px}
-.pale-section{background:var(--pale)}
-.holiday-card{padding:28px 24px;background:white;border:1px solid var(--border);border-radius:12px;box-shadow:0 5px 20px #102b5008}
-.holiday-icon{font-size:29px;margin-bottom:12px}
-.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.service-card{min-height:280px;padding:32px;border-radius:14px;display:flex;flex-direction:column;justify-content:end;color:white;background-size:cover;background-position:center;position:relative;overflow:hidden}
-.service-card:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#071d55e8,#071d550d)}
-.service-card>*{position:relative;z-index:1}
-.flight-card{background-image:url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1000&q=80')}
-.hotel-card{background-image:url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1000&q=80')}
-.service-card h3{font:30px 'Playfair Display',serif;margin-bottom:8px}
-.service-card p{color:#e7f1fa;margin-bottom:17px;font-size:14px}
-.service-card .button{align-self:flex-start;background:white;color:var(--navy)}
-.about-layout{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:50px}
-.about-image img{width:100%;height:410px;object-fit:cover;border-radius:14px}
-.about-copy h2{color:var(--navy);font-size:40px;margin-bottom:18px}
-.about-copy p{color:var(--muted);margin-bottom:15px}
+  <title>You & Me Holidays | Luxury Holidays, Flights & Worldwide Travel</title>
+  <meta name="description" content="Explore worldwide holidays with You & Me Holidays. Discover luxury escapes, honeymoons, family holidays, flights and hotels. Request your personalised travel enquiry.">
+  <meta name="author" content="You & Me Holidays">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#102b50">
+  <link rel="canonical" href="https://murtazarahi83-star.github.io/you-and-me-holidays/">
 
-/* ENQUIRY SYSTEM */
-.enquiry-section{background:var(--pale)}
-.enquiry-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}
-.enquiry-intro h2{color:var(--navy);font-size:38px;margin-bottom:17px}
-.enquiry-intro p{color:var(--muted);margin-bottom:16px}
-.enquiry-form,.review-panel,.thank-panel{background:white;padding:30px;border-radius:14px;box-shadow:var(--shadow)}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:15px}
-.form-group.full{grid-column:1/-1}
-.form-group label{font-size:13px;font-weight:700;color:var(--navy)}
-.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px;border:1px solid #dce5ee;border-radius:6px;background:white;color:var(--text);outline:none}
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--blue)}
-.form-group textarea{min-height:95px;resize:vertical}
-.form-note{color:var(--muted);font-size:12px;margin-top:12px}
-.enquiry-choice{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:22px}
-.choice-button{background:white;border:1px solid var(--border);border-radius:9px;padding:14px 7px;color:var(--navy);font-weight:700;cursor:pointer}
-.choice-button span{display:block;font-size:23px;margin-bottom:4px}
-.choice-button.active{border:2px solid var(--blue);background:#edf6fd;color:var(--blue)}
-.form-title{color:var(--navy);font-size:23px;margin-bottom:18px}
-.review-title,.thank-title{font-family:'Playfair Display',serif;color:var(--navy);font-size:32px;text-align:center;margin-bottom:10px}
-.review-subtitle,.thank-subtitle{text-align:center;color:var(--muted);font-size:14px;margin-bottom:24px}
-.review-row{display:flex;justify-content:space-between;gap:15px;padding:11px 0;border-bottom:1px solid var(--border);font-size:14px}
-.review-row strong{color:var(--navy);text-align:right;overflow-wrap:anywhere}
-.review-actions{display:flex;gap:10px;margin-top:23px;flex-wrap:wrap}
-.secondary-button{padding:12px 20px;border:1px solid var(--blue);background:white;color:var(--blue);border-radius:7px;font-weight:700;cursor:pointer}
-.channel-card{border:1px solid var(--border);border-radius:10px;padding:18px;margin-top:12px;display:flex;align-items:center;justify-content:space-between;gap:15px}
-.channel-card h3{color:var(--navy);font-size:16px}
-.channel-card p{color:var(--muted);font-size:12px}
-.channel-card .button{white-space:nowrap}
-.tick-circle{width:75px;height:75px;border-radius:50%;background:#e8f7ef;color:#20a466;display:grid;place-items:center;font-size:40px;margin:0 auto 20px}
-.hidden{display:none!important}
-.faq-list{max-width:800px;margin:auto}
-.faq-list details{padding:18px;border-bottom:1px solid var(--border)}
-.faq-list summary{cursor:pointer;color:var(--navy);font-weight:700}
-.faq-list details p{color:var(--muted);font-size:14px;padding-top:10px}
-.contact-banner{background:var(--navy);color:white;text-align:center}
-.contact-banner h2{font-size:39px;margin-bottom:14px}
-.contact-banner p{color:#d6e5f4;margin-bottom:23px}
-.contact-banner .button{background:white;color:var(--navy)}
-footer{background:#091d36;color:#d4dfeb;padding:40px 0 20px}
-.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px;padding-bottom:28px}
-.footer-brand{color:white;font-size:20px;font-weight:800;margin-bottom:10px}
-footer h3{color:white;font-size:15px;margin-bottom:12px}
-footer p,footer a{color:#c4d0dd;font-size:13px}
-footer a{display:block;margin-bottom:8px}
-.copyright{border-top:1px solid #ffffff20;padding-top:17px;text-align:center;font-size:12px;color:#9fb0c3}
-.whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:200;background:#20b866;color:white;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:25px;box-shadow:0 5px 20px #0003}
-@media(max-width:900px){
-.navbar{flex-wrap:wrap;padding:14px 0}
-.menu-toggle{display:block}
-nav{display:none;width:100%;flex-direction:column;align-items:flex-start;gap:14px;padding:10px 0}
-nav.open{display:flex}
-.destination-grid,.holiday-grid{grid-template-columns:1fr 1fr}
-.about-layout,.enquiry-layout{grid-template-columns:1fr}
-.footer-grid{grid-template-columns:1fr 1fr}
-}
-@media(max-width:600px){
-section{padding:58px 0}
-.hero{min-height:510px}
-.hero-content{padding:65px 0}
-.destination-grid,.holiday-grid,.service-grid,.footer-grid{grid-template-columns:1fr}
-.form-grid{grid-template-columns:1fr}
-.form-group.full{grid-column:auto}
-.enquiry-form,.review-panel,.thank-panel{padding:20px}
-.about-copy h2,.enquiry-intro h2{font-size:32px}
-.contact-banner h2{font-size:31px}
-.enquiry-choice{gap:6px}
-.choice-button{font-size:12px;padding:12px 4px}
-.channel-card{align-items:flex-start;flex-direction:column}
-}
-</style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="You & Me Holidays | Your Journey, Our Passion">
+  <meta property="og:description" content="Discover worldwide holidays, luxury escapes, romantic honeymoons and unforgettable family adventures.">
+  <meta property="og:url" content="https://murtazarahi83-star.github.io/you-and-me-holidays/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=85">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy:#102b50;
+      --blue:#1769aa;
+      --blue-dark:#10558e;
+      --pale:#edf6fd;
+      --text:#26384c;
+      --muted:#68788c;
+      --border:#e3ebf3;
+      --white:#ffffff;
+      --shadow:0 12px 35px rgba(16,43,80,.09);
+    }
+
+    * {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html {
+      scroll-behavior:smooth;
+      scroll-padding-top:95px;
+    }
+
+    body {
+      font-family:'DM Sans',sans-serif;
+      color:var(--text);
+      line-height:1.65;
+      background:var(--white);
+    }
+
+    a {
+      text-decoration:none;
+      color:inherit;
+    }
+
+    button,input,select,textarea {
+      font:inherit;
+    }
+
+    button {
+      cursor:pointer;
+    }
+
+    img {
+      max-width:100%;
+    }
+
+    .container {
+      width:min(1160px,90%);
+      margin:auto;
+    }
+
+    .topbar {
+      background:var(--navy);
+      color:white;
+      padding:8px 12px;
+      text-align:center;
+      font-size:12px;
+      letter-spacing:.3px;
+    }
+
+    header {
+      background:white;
+      position:sticky;
+      top:0;
+      z-index:100;
+      box-shadow:0 3px 18px #102b5010;
+    }
+
+    .navbar {
+      min-height:80px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+    }
+
+    .logo {
+      font-size:21px;
+      font-weight:800;
+      color:var(--navy);
+      white-space:nowrap;
+      letter-spacing:.3px;
+    }
+
+    .logo span,
+    .footer-brand span {
+      color:var(--blue);
+    }
+
+    nav {
+      display:flex;
+      align-items:center;
+      gap:19px;
+    }
+
+    nav a {
+      font-size:13px;
+      font-weight:700;
+      color:var(--navy);
+      transition:.2s;
+    }
+
+    nav a:hover {
+      color:var(--blue);
+    }
+
+    .button {
+      display:inline-block;
+      background:var(--blue);
+      color:white;
+      border:0;
+      padding:13px 23px;
+      border-radius:7px;
+      font-weight:700;
+      cursor:pointer;
+      transition:.2s;
+      text-align:center;
+    }
+
+    .button:hover {
+      background:var(--blue-dark);
+      transform:translateY(-2px);
+    }
+
+    .button-outline {
+      display:inline-block;
+      padding:12px 22px;
+      border:1px solid white;
+      color:white;
+      border-radius:7px;
+      margin-left:8px;
+      font-weight:700;
+    }
+
+    .button-outline:hover {
+      background:white;
+      color:var(--navy);
+    }
+
+    .menu-toggle {
+      display:none;
+      border:0;
+      background:var(--pale);
+      color:var(--navy);
+      padding:9px 12px;
+      border-radius:6px;
+      font-size:20px;
+    }
+
+    .hero {
+      min-height:590px;
+      display:flex;
+      align-items:center;
+      color:white;
+      background:
+        linear-gradient(90deg,#081f3be8 0%,#081f3b9c 48%,#081f3b20 100%),
+        url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2000&q=85') center/cover;
+    }
+
+    .hero-content {
+      max-width:700px;
+      padding:95px 0;
+    }
+
+    .eyebrow {
+      text-transform:uppercase;
+      color:var(--blue);
+      letter-spacing:3px;
+      font-size:11px;
+      font-weight:800;
+      margin-bottom:14px;
+    }
+
+    .hero .eyebrow {
+      color:#c8e6ff;
+    }
+
+    h1,h2 {
+      font-family:'Playfair Display',Georgia,serif;
+      line-height:1.16;
+    }
+
+    h1 {
+      font-size:clamp(43px,6vw,70px);
+      margin-bottom:22px;
+    }
+
+    .hero p {
+      color:#edf5ff;
+      font-size:17px;
+      max-width:570px;
+      margin-bottom:30px;
+    }
+
+    section {
+      padding:82px 0;
+    }
+
+    .section-heading {
+      max-width:700px;
+      text-align:center;
+      margin:0 auto 43px;
+    }
+
+    .section-heading h2 {
+      color:var(--navy);
+      font-size:clamp(30px,4vw,43px);
+      margin-bottom:14px;
+    }
+
+    .section-heading p {
+      color:var(--muted);
+    }
+
+    .destination-grid,
+    .holiday-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:24px;
+    }
+
+    .destination-card {
+      border-radius:13px;
+      overflow:hidden;
+      background:white;
+      box-shadow:var(--shadow);
+      transition:.25s;
+    }
+
+    .destination-card:hover {
+      transform:translateY(-5px);
+    }
+
+    .destination-card img {
+      width:100%;
+      height:225px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .destination-info {
+      padding:22px;
+    }
+
+    .destination-info h3,
+    .holiday-card h3 {
+      color:var(--navy);
+      margin-bottom:9px;
+      font-size:19px;
+    }
+
+    .destination-info p,
+    .holiday-card p {
+      color:var(--muted);
+      font-size:14px;
+      margin-bottom:14px;
+    }
+
+    .text-link {
+      color:var(--blue);
+      font-weight:700;
+      font-size:14px;
+    }
+
+    .text-link:hover {
+      color:var(--blue-dark);
+      text-decoration:underline;
+    }
+
+    .pale-section {
+      background:var(--pale);
+    }
+
+    .holiday-card {
+      padding:29px 25px;
+      background:white;
+      border:1px solid var(--border);
+      border-radius:12px;
+      box-shadow:0 5px 20px #102b5008;
+      transition:.2s;
+    }
+
+    .holiday-card:hover {
+      transform:translateY(-3px);
+      box-shadow:var(--shadow);
+    }
+
+    .holiday-icon {
+      font-size:30px;
+      margin-bottom:13px;
+    }
+
+    .service-grid {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:25px;
+    }
+
+    .service-card {
+      min-height:310px;
+      padding:34px;
+      border-radius:14px;
+      display:flex;
+      flex-direction:column;
+      justify-content:end;
+      color:white;
+      background-size:cover;
+      background-position:center;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .service-card:before {
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(0deg,#071d55ed,#071d5510);
+    }
+
+    .service-card>* {
+      position:relative;
+      z-index:1;
+    }
+
+    .flight-card {
+      background-image:url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1000&q=80');
+    }
+
+    .hotel-card {
+      background-image:url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1000&q=80');
+    }
+
+    .service-card h3 {
+      font:32px 'Playfair Display',serif;
+      margin-bottom:9px;
+    }
+
+    .service-card p {
+      color:#e7f1fa;
+      margin-bottom:19px;
+      font-size:14px;
+      max-width:400px;
+    }
+
+    .service-card .button {
+      align-self:flex-start;
+      background:white;
+      color:var(--navy);
+    }
+
+    .service-card .button:hover {
+      background:var(--pale);
+    }
+
+    .about-layout {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      align-items:center;
+      gap:52px;
+    }
+
+    .about-image img {
+      width:100%;
+      height:430px;
+      object-fit:cover;
+      border-radius:14px;
+      box-shadow:var(--shadow);
+    }
+
+    .about-copy h2 {
+      color:var(--navy);
+      font-size:clamp(32px,4vw,42px);
+      margin-bottom:19px;
+    }
+
+    .about-copy p {
+      color:var(--muted);
+      margin-bottom:16px;
+    }
+
+    .about-copy .button {
+      margin-top:8px;
+    }
+
+    .enquiry-section {
+      background:var(--pale);
+    }
+
+    .enquiry-layout {
+      display:grid;
+      grid-template-columns:.8fr 1.2fr;
+      gap:42px;
+      align-items:start;
+    }
+
+    .enquiry-intro {
+      position:sticky;
+      top:115px;
+    }
+
+    .enquiry-intro h2 {
+      color:var(--navy);
+      font-size:clamp(32px,4vw,40px);
+      margin-bottom:18px;
+    }
+
+    .enquiry-intro p {
+      color:var(--muted);
+      margin-bottom:16px;
+    }
+
+    .enquiry-intro a {
+      color:var(--blue);
+      font-weight:700;
+      overflow-wrap:anywhere;
+    }
+
+    .enquiry-form,
+    .review-panel,
+    .thank-panel {
+      background:white;
+      padding:31px;
+      border-radius:14px;
+      box-shadow:var(--shadow);
+    }
+
+    .form-grid {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+    }
+
+    .form-group {
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      margin-bottom:15px;
+      min-width:0;
+    }
+
+    .form-group.full {
+      grid-column:1/-1;
+    }
+
+    .form-group label {
+      font-size:13px;
+      font-weight:700;
+      color:var(--navy);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width:100%;
+      min-width:0;
+      padding:12px;
+      border:1px solid #dce5ee;
+      border-radius:6px;
+      background:white;
+      color:var(--text);
+      outline:none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color:var(--blue);
+      box-shadow:0 0 0 3px #1769aa15;
+    }
+
+    .form-group textarea {
+      min-height:105px;
+      resize:vertical;
+    }
+
+    .form-note {
+      color:var(--muted);
+      font-size:12px;
+      margin-top:13px;
+    }
+
+    .enquiry-choice {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:10px;
+      margin-bottom:23px;
+    }
+
+    .choice-button {
+      background:white;
+      border:1px solid var(--border);
+      border-radius:9px;
+      padding:14px 7px;
+      color:var(--navy);
+      font-weight:700;
+      cursor:pointer;
+    }
+
+    .choice-button span {
+      display:block;
+      font-size:24px;
+      margin-bottom:4px;
+    }
+
+    .choice-button.active {
+      border:2px solid var(--blue);
+      background:#edf6fd;
+      color:var(--blue);
+    }
+
+    .form-title {
+      color:var(--navy);
+      font-size:23px;
+      margin-bottom:19px;
+    }
+
+    .review-title,
+    .thank-title {
+      font-family:'Playfair Display',serif;
+      color:var(--navy);
+      font-size:32px;
+      text-align:center;
+      margin-bottom:10px;
+    }
+
+    .review-subtitle,
+    .thank-subtitle {
+      text-align:center;
+      color:var(--muted);
+      font-size:14px;
+      margin-bottom:25px;
+    }
+
+    .review-row {
+      display:flex;
+      justify-content:space-between;
+      gap:16px;
+      padding:12px 0;
+      border-bottom:1px solid var(--border);
+      font-size:14px;
+    }
+
+    .review-row span {
+      color:var(--muted);
+    }
+
+    .review-row strong {
+      color:var(--navy);
+      text-align:right;
+      overflow-wrap:anywhere;
+      max-width:60%;
+    }
+
+    .review-actions {
+      display:flex;
+      gap:10px;
+      margin-top:24px;
+      flex-wrap:wrap;
+    }
+
+    .secondary-button {
+      padding:12px 20px;
+      border:1px solid var(--blue);
+      background:white;
+      color:var(--blue);
+      border-radius:7px;
+      font-weight:700;
+      cursor:pointer;
+    }
+
+    .secondary-button:hover {
+      background:var(--pale);
+    }
+
+    .channel-card {
+      border:1px solid var(--border);
+      border-radius:10px;
+      padding:19px;
+      margin-top:13px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:15px;
+    }
+
+    .channel-card h3 {
+      color:var(--navy);
+      font-size:16px;
+    }
+
+    .channel-card p {
+      color:var(--muted);
+      font-size:12px;
+    }
+
+    .channel-card .button {
+      white-space:nowrap;
+    }
+
+    .tick-circle {
+      width:75px;
+      height:75px;
+      border-radius:50%;
+      background:#e8f7ef;
+      color:#20a466;
+      display:grid;
+      place-items:center;
+      font-size:40px;
+      margin:0 auto 20px;
+    }
+
+    .hidden {
+      display:none!important;
+    }
+
+    .faq-list {
+      max-width:820px;
+      margin:auto;
+    }
+
+    .faq-list details {
+      padding:19px 4px;
+      border-bottom:1px solid var(--border);
+    }
+
+    .faq-list summary {
+      cursor:pointer;
+      color:var(--navy);
+      font-weight:700;
+      list-style-position:inside;
+    }
+
+    .faq-list details p {
+      color:var(--muted);
+      font-size:14px;
+      padding:12px 25px 0;
+    }
+
+    .contact-banner {
+      background:
+        linear-gradient(90deg,#102b50f0,#102b50d9),
+        url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80') center/cover;
+      color:white;
+      text-align:center;
+    }
+
+    .contact-banner h2 {
+      font-size:clamp(31px,4vw,42px);
+      margin-bottom:14px;
+    }
+
+    .contact-banner p {
+      color:#d6e5f4;
+      margin-bottom:24px;
+    }
+
+    .contact-banner .button {
+      background:white;
+      color:var(--navy);
+    }
+
+    footer {
+      background:#091d36;
+      color:#d4dfeb;
+      padding:44px 0 20px;
+    }
+
+    .footer-grid {
+      display:grid;
+      grid-template-columns:1.5fr 1fr 1fr;
+      gap:35px;
+      padding-bottom:30px;
+    }
+
+    .footer-brand {
+      color:white;
+      font-size:21px;
+      font-weight:800;
+      margin-bottom:12px;
+    }
+
+    footer h3 {
+      color:white;
+      font-size:15px;
+      margin-bottom:14px;
+    }
+
+    footer p,
+    footer a {
+      color:#c4d0dd;
+      font-size:13px;
+    }
+
+    footer p {
+      margin-bottom:9px;
+    }
+
+    footer a {
+      display:block;
+      margin-bottom:9px;
+    }
+
+    footer a:hover {
+      color:white;
+    }
+
+    .copyright {
+      border-top:1px solid #ffffff20;
+      padding-top:18px;
+      text-align:center;
+      font-size:12px;
+      color:#9fb0c3;
+    }
+
+    .whatsapp-float {
+      position:fixed;
+      right:22px;
+      bottom:22px;
+      z-index:200;
+      background:#20b866;
+      color:white;
+      width:57px;
+      height:57px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:26px;
+      box-shadow:0 5px 20px #0003;
+      transition:.2s;
+    }
+
+    .whatsapp-float:hover {
+      transform:scale(1.07);
+    }
+
+    :focus-visible {
+      outline:3px solid #65b5f2;
+      outline-offset:3px;
+    }
+
+    @media(max-width:950px) {
+      .navbar {
+        flex-wrap:wrap;
+        padding:14px 0;
+      }
+
+      .menu-toggle {
+        display:block;
+        margin-left:auto;
+      }
+
+      .desktop-quote {
+        display:none;
+      }
+
+      nav {
+        display:none;
+        width:100%;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:14px;
+        padding:12px 0;
+      }
+
+      nav.open {
+        display:flex;
+      }
+
+      .destination-grid,
+      .holiday-grid {
+        grid-template-columns:1fr 1fr;
+      }
+
+      .about-layout,
+      .enquiry-layout {
+        grid-template-columns:1fr;
+      }
+
+      .enquiry-intro {
+        position:static;
+      }
+
+      .footer-grid {
+        grid-template-columns:1fr 1fr;
+      }
+    }
+
+    @media(max-width:600px) {
+      section {
+        padding:60px 0;
+      }
+
+      .hero {
+        min-height:520px;
+      }
+
+      .hero-content {
+        padding:65px 0;
+      }
+
+      .hero p {
+        font-size:15px;
+      }
+
+      .button-outline {
+        margin:12px 0 0;
+      }
+
+      .destination-grid,
+      .holiday-grid,
+      .service-grid,
+      .footer-grid {
+        grid-template-columns:1fr;
+      }
+
+      .destination-card img {
+        height:215px;
+      }
+
+      .service-card {
+        min-height:285px;
+        padding:25px;
+      }
+
+      .about-image img {
+        height:300px;
+      }
+
+      .form-grid {
+        grid-template-columns:1fr;
+      }
+
+      .form-group.full {
+        grid-column:auto;
+      }
+
+      .enquiry-form,
+      .review-panel,
+      .thank-panel {
+        padding:21px;
+      }
+
+      .enquiry-choice {
+        gap:6px;
+      }
+
+      .choice-button {
+        font-size:12px;
+        padding:12px 4px;
+      }
+
+      .channel-card {
+        align-items:flex-start;
+        flex-direction:column;
+      }
+
+      .channel-card .button {
+        width:100%;
+      }
+
+      .review-row {
+        flex-direction:column;
+        gap:3px;
+      }
+
+      .review-row strong {
+        text-align:left;
+        max-width:100%;
+      }
+
+      .review-actions {
+        flex-direction:column;
+      }
+
+      .review-actions button {
+        width:100%;
+      }
+
+      .whatsapp-float {
+        right:15px;
+        bottom:15px;
+        width:53px;
+        height:53px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "You & Me Holidays",
+    "url": "https://murtazarahi83-star.github.io/you-and-me-holidays/",
+    "email": "murtazarahi83@gmail.com",
+    "telephone": "+923498519613",
+    "description": "Worldwide holiday enquiries, flights, hotels and personalised travel planning."
+  }
+  </script>
 </head>
 
 <body>
-<div class="topbar">Your next journey starts with You & Me Holidays</div>
+
+<div class="topbar">
+  Your next journey starts with You & Me Holidays
+</div>
 
 <header>
   <div class="container navbar">
+
     <a href="#home" class="logo">YOU & ME <span>HOLIDAYS</span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
-    <nav id="mainNav">
+
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-label="Open navigation menu" aria-expanded="false"
+      aria-controls="mainNav">☰</button>
+
+    <nav id="mainNav" aria-label="Main navigation">
       <a href="#home">Home</a>
       <a href="#destinations">Destinations</a>
-      <a href="#packages">Holiday Packages</a>
+      <a href="#packages">Holidays</a>
       <a href="#flights">Flights</a>
       <a href="#hotels">Hotels</a>
       <a href="#about">About Us</a>
-      <a href="#enquiry">Contact</a>
+      <a href="#faq">FAQs</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <a href="#enquiry" class="button">Get a Quote</a>
+
+    <a href="#enquiry" class="button desktop-quote">Get a Quote</a>
   </div>
 </header>
 
 <main>
-<section class="hero" id="home">
-  <div class="container">
-    <div class="hero-content">
-      <div class="eyebrow">Discover the world with us</div>
-      <h1>Discover Worldwide Holidays</h1>
-      <p>From luxury escapes and romantic honeymoons to unforgettable family holidays, discover destinations around the world with You & Me Holidays.</p>
-      <a href="#destinations" class="button">Explore Holidays</a>
-      <a href="#enquiry" class="button-outline">Get a Quote</a>
-    </div>
-  </div>
-</section>
 
-
-<section id="destinations">
-  <div class="container">
-    <div class="section-heading">
-      <div class="eyebrow">Explore the world</div>
-      <h2>Explore Our Worldwide Holiday Destinations</h2>
-      <p>Discover exceptional holidays in the world's most beautiful destinations, from luxury beach escapes and romantic island retreats to unforgettable city breaks.</p>
-    </div>
-
-    <div class="destination-grid">
-
-      <article class="destination-card">
-        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80" alt="Dubai">
-        <div class="destination-info">
-          <h3>Dubai</h3>
-          <p>Experience luxury beachfront resorts, iconic attractions, desert adventures and unforgettable Dubai holidays.</p>
-          <a href="#enquiry" class="text-link">Explore Dubai →</a>
-        </div>
-      </article>
-
-      <article class="destination-card">
-        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=900&q=80" alt="Maldives">
-        <div class="destination-info">
-          <h3>Maldives</h3>
-          <p>Escape to stunning private islands, luxury overwater villas, crystal-clear waters and romantic beach experiences.</p>
-          <a href="#enquiry" class="text-link">Explore Maldives →</a>
-        </div>
-      </article>
-
-      <article class="destination-card">
-        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80" alt="Italy">
-        <div class="destination-info">
-          <h3>Italy</h3>
-          <p>Discover romantic Italian cities, beautiful coastlines, luxury stays, rich culture and unforgettable cuisine.</p>
-          <a href="#enquiry" class="text-link">Explore Italy →</a>
-        </div>
-      </article>
-
-      <article class="destination-card">
-        <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=900&q=80" alt="Greece">
-        <div class="destination-info">
-          <h3>Greece</h3>
-          <p>Enjoy breathtaking island views, beautiful beaches, luxury resorts and charming Mediterranean villages.</p>
-          <a href="#enquiry" class="text-link">Explore Greece →</a>
-        </div>
-      </article>
-
-      <article class="destination-card">
-        <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=900&q=80" alt="Turkey">
-        <div class="destination-info">
-          <h3>Turkey</h3>
-          <p>Explore stunning coastal resorts, vibrant Istanbul, fascinating history and exceptional holiday experiences.</p>
-          <a href="#enquiry" class="text-link">Explore Turkey →</a>
-        </div>
-      </article>
-
-      <article class="destination-card">
-        <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=80" alt="Thailand">
-        <div class="destination-info">
-          <h3>Thailand</h3>
-          <p>Discover tropical islands, luxury beachfront hotels, vibrant cities and unforgettable Asian adventures.</p>
-          <a href="#enquiry" class="text-link">Explore Thailand →</a>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-
-
-<section class="pale-section" id="packages">
-  <div class="container">
-    <div class="section-heading">
-      <div class="eyebrow">Find your perfect holiday</div>
-      <h2>Exceptional Holidays, Designed Around You</h2>
-      <p>Whether you are planning a romantic escape, a family adventure or a luxury getaway, discover a holiday that matches your style.</p>
-    </div>
-
-    <div class="holiday-grid">
-
-      <article class="holiday-card">
-        <div class="holiday-icon">💎</div>
-        <h3>Luxury Holidays</h3>
-        <p>Experience exceptional hotels, elegant resorts, exclusive experiences and unforgettable escapes.</p>
-        <a href="#enquiry" class="text-link">Enquire now →</a>
-      </article>
-
-      <article class="holiday-card">
-        <div class="holiday-icon">❤️</div>
-        <h3>Honeymoon Holidays</h3>
-        <p>Celebrate your love with romantic destinations, private villas and memorable experiences for two.</p>
-        <a href="#enquiry" class="text-link">Enquire now →</a>
-      </article>
-
-      <article class="holiday-card">
-        <div class="holiday-icon">👨‍👩‍👧‍👦</div>
-        <h3>Family Holidays</h3>
-        <p>Create unforgettable memories with family-friendly resorts, exciting activities and beautiful destinations.</p>
-        <a href="#enquiry" class="text-link">Enquire now →</a>
-      </article>
-
-      <article class="holiday-card">
-        <div class="holiday-icon">🏖️</div>
-        <h3>Beach Holidays</h3>
-        <p>Escape to stunning beaches, beachfront hotels, tropical islands and relaxing seaside resorts.</p>
-        <a href="#enquiry" class="text-link">Enquire now →</a>
-      </article>
-
-      <article class="holiday-card">
-        <div class="holiday-icon">🌍</div>
-        <h3>Worldwide Holidays</h3>
-        <p>Discover incredible destinations across Europe, Asia, the Middle East and beyond.</p>
-        <a href="#enquiry" class="text-link">Enquire now →</a>
-      </article>
-
-      <article class="holiday-card">
-        <div class="holiday-icon">✈️</div>
-        <h3>Tailor-Made Holidays</h3>
-        <p>Enjoy a personalised travel experience shaped around your dates, preferences and budget.</p>
-        <a href="#enquiry" class="text-link">Enquire now →</a>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-
-<section>
-  <div class="container">
-    <div class="section-heading"><div class="eyebrow">Travel planning made simple</div><h2>Flights & Hotels</h2><p>Tell us your travel requirements and ask our team for available options.</p></div>
-    <div class="service-grid">
-      <article class="service-card flight-card" id="flights"><h3>Find Your Flights</h3><p>Tell us your departure airport, destination and travel dates.</p><button class="button" type="button" data-enquiry="flight">Request Flight Options</button></article>
-      <article class="service-card hotel-card" id="hotels"><h3>Discover Your Stay</h3><p>Tell us your preferred hotel category and accommodation needs.</p><button class="button" type="button" data-enquiry="hotel">Request Hotel Options</button></article>
-    </div>
-  </div>
-</section>
-
-
-<section class="pale-section" id="about">
-  <div class="container about-layout">
-
-    <div class="about-image">
-      <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1100&q=85" alt="Beautiful mountain lake holiday destination">
-    </div>
-
-    <div class="about-copy">
-      <div class="eyebrow">Welcome to You & Me Holidays</div>
-
-      <h2>Your Journey, Our Passion</h2>
-
-      <p>At You & Me Holidays, we believe every great holiday begins with understanding what matters most to you.</p>
-
-      <p>From luxury escapes and romantic honeymoons to memorable family holidays and worldwide adventures, we are here to help you explore destinations and discover experiences you'll treasure.</p>
-
-      <p>We focus on personalised holiday planning, carefully considered travel options and friendly customer service, making it easier to plan a journey around your preferences, travel dates and budget.</p>
-
-      <p>Whether you know exactly where you want to go or need a little inspiration, let us help you take the next step towards your perfect holiday.</p>
-
-      <a href="#enquiry" class="button">Talk to Our Team</a>
-    </div>
-
-  </div>
-</section>
-
-
-<section>
-  <div class="container">
-    <div class="section-heading"><div class="eyebrow">The You & Me experience</div><h2>Why Plan Your Holiday With Us?</h2><p>We want to make your holiday planning experience enjoyable from the start.</p></div>
-    <div class="holiday-grid">
-      <article class="holiday-card"><div class="holiday-icon">🌎</div><h3>Worldwide Destinations</h3><p>Explore travel possibilities around the world.</p></article>
-      <article class="holiday-card"><div class="holiday-icon">🤝</div><h3>Personal Assistance</h3><p>Discuss your travel plans and preferences with our team.</p></article>
-      <article class="holiday-card"><div class="holiday-icon">✨</div><h3>Travel Your Way</h3><p>Share the experiences you want and explore suitable options.</p></article>
-    </div>
-  </div>
-</section>
-
-<!-- ENQUIRY SECTION -->
-<section class="enquiry-section" id="enquiry">
-  <div class="container enquiry-layout">
-    <div class="enquiry-intro">
-      <div class="eyebrow">Start planning today</div>
-      <h2>Let's Plan Your Next Journey</h2>
-      <p>Choose the service you need and complete the relevant details. You will be able to review everything before sending your enquiry.</p>
-      <p>Our team will use your information to discuss suitable travel options with you.</p>
-      <p><strong>WhatsApp:</strong> +92 349 8519613</p>
-      <p><strong>Email:</strong> murtazarahi83@gmail.com</p>
-    </div>
-
-    <div>
-      <div class="enquiry-form" id="formPanel">
-        <h2 class="form-title">What would you like to enquire about?</h2>
-        <div class="enquiry-choice">
-          <button type="button" class="choice-button active" data-type="package"><span>🏖️</span>Holiday</button>
-          <button type="button" class="choice-button" data-type="flight"><span>✈️</span>Flights</button>
-          <button type="button" class="choice-button" data-type="hotel"><span>🏨</span>Hotels</button>
-        </div>
-
-        <form id="travelForm">
-          <div class="form-grid" id="dynamicFields"></div>
-          <button class="button" type="submit">Review My Enquiry →</button>
-          <p class="form-note">You can review and edit your information before choosing how to send your enquiry.</p>
-        </form>
-      </div>
-
-      <!-- REVIEW PAGE -->
-      <div class="review-panel hidden" id="reviewPanel">
-        <h2 class="review-title">Review Your Enquiry</h2>
-        <p class="review-subtitle">Please check your travel details carefully before confirming.</p>
-        <div id="reviewDetails"></div>
-        <div class="review-actions">
-          <button type="button" class="secondary-button" id="editDetails">← Edit My Details</button>
-          <button type="button" class="button" id="confirmDetails">Yes, Confirm My Enquiry</button>
-        </div>
-      </div>
-
-      <!-- CHOOSE CONTACT METHOD -->
-      <div class="review-panel hidden" id="sendPanel">
-        <h2 class="review-title">How Would You Like to Send It?</h2>
-        <p class="review-subtitle">Your enquiry is ready. Choose your preferred contact method.</p>
-        <div class="channel-card">
-          <div><h3>Send through WhatsApp</h3><p>Open WhatsApp with your complete enquiry prepared.</p></div>
-          <button type="button" class="button" id="sendWhatsApp">WhatsApp →</button>
-        </div>
-        <div class="channel-card">
-          <div><h3>Send through Email</h3><p>Open an email with your complete enquiry prepared.</p></div>
-          <button type="button" class="button" id="sendEmail">Email →</button>
-        </div>
-        <div style="margin-top:20px">
-          <button type="button" class="secondary-button" id="backToReview">← Back to Review</button>
-        </div>
-        <p class="form-note">WhatsApp and email will open a prepared message. You must press Send in the relevant app to complete your enquiry.</p>
-      </div>
-
-      <!-- THANK YOU PAGE -->
-      <div class="thank-panel hidden" id="thankPanel">
-        <div class="tick-circle">✓</div>
-        <h2 class="thank-title">Thank You!</h2>
-        <p class="thank-subtitle">Thank you for choosing You & Me Holidays. We look forward to helping you plan your next journey.</p>
-        <div class="pale-section" style="padding:18px;border-radius:10px;margin-bottom:20px">
-          <strong style="color:var(--navy)">One last step</strong>
-          <p style="font-size:13px;color:var(--muted);margin-top:5px">Please press Send in WhatsApp or your email app to complete your enquiry. Your message is not received by us until you send it.</p>
-        </div>
-        <a href="#home" class="button">Back to Home</a>
-        <p style="margin-top:20px;color:var(--blue);font-weight:800">YOU & ME HOLIDAYS</p>
-        <p style="font-size:13px;color:var(--muted)">Your Journey, Our Passion.</p>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="eyebrow">Discover the world with us</div>
+        <h1>Discover a World of Extraordinary Holidays</h1>
+        <p>
+          From luxury escapes and romantic honeymoons to unforgettable
+          family holidays, discover destinations around the world with
+          You & Me Holidays.
+        </p>
+        <a href="#destinations" class="button">Explore Destinations</a>
+        <a href="#enquiry" class="button-outline">Plan Your Holiday</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- DESTINATIONS -->
+  <section id="destinations">
+    <div class="container">
 
-<section id="faq">
-  <div class="container">
-    <div class="section-heading">
-      <div class="eyebrow">Here to help</div>
-      <h2>Frequently Asked Questions</h2>
-      <p>Find answers to common questions about planning your next holiday with You & Me Holidays.</p>
+      <div class="section-heading">
+        <div class="eyebrow">Explore the world</div>
+        <h2>Discover Your Next Destination</h2>
+        <p>
+          From beautiful island escapes and luxury beach resorts
+          to unforgettable city breaks, explore holiday inspiration
+          from around the world.
+        </p>
+      </div>
+
+      <div class="destination-grid">
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80"
+            alt="Dubai skyline and city attractions" loading="lazy">
+          <div class="destination-info">
+            <h3>Dubai</h3>
+            <p>Experience luxury resorts, iconic attractions, desert adventures and exciting city experiences.</p>
+            <a href="#enquiry" class="text-link" data-destination="Dubai">Explore Dubai →</a>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=900&q=80"
+            alt="Tropical Maldives island and turquoise water" loading="lazy">
+          <div class="destination-info">
+            <h3>Maldives</h3>
+            <p>Escape to private islands, overwater villas, crystal-clear waters and romantic beach experiences.</p>
+            <a href="#enquiry" class="text-link" data-destination="Maldives">Explore Maldives →</a>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80"
+            alt="Italian coastal village" loading="lazy">
+          <div class="destination-info">
+            <h3>Italy</h3>
+            <p>Discover romantic cities, beautiful coastlines, rich culture and unforgettable cuisine.</p>
+            <a href="#enquiry" class="text-link" data-destination="Italy">Explore Italy →</a>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=900&q=80"
+            alt="Greek island with blue sea and white buildings" loading="lazy">
+          <div class="destination-info">
+            <h3>Greece</h3>
+            <p>Enjoy beautiful beaches, Mediterranean villages, island views and relaxing resorts.</p>
+            <a href="#enquiry" class="text-link" data-destination="Greece">Explore Greece →</a>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=900&q=80"
+            alt="Istanbul city and historic architecture in Turkey" loading="lazy">
+          <div class="destination-info">
+            <h3>Turkey</h3>
+            <p>Explore coastal resorts, vibrant Istanbul, fascinating history and beautiful landscapes.</p>
+            <a href="#enquiry" class="text-link" data-destination="Turkey">Explore Turkey →</a>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=900&q=80"
+            alt="Tropical Thailand travel destination" loading="lazy">
+          <div class="destination-info">
+            <h3>Thailand</h3>
+            <p>Discover tropical islands, beachfront stays, vibrant cities and unforgettable adventures.</p>
+            <a href="#enquiry" class="text-link" data-destination="Thailand">Explore Thailand →</a>
+          </div>
+        </article>
+
+      </div>
     </div>
+  </section>
 
-    <div class="faq-list">
+  <!-- HOLIDAY TYPES -->
+  <section class="pale-section" id="packages">
+    <div class="container">
 
-      <details>
-        <summary>Which destinations can I book through You & Me Holidays?</summary>
-        <p>You can enquire about holidays to destinations around the world. Simply tell us where you would like to travel, and our team can help you explore suitable options.</p>
-      </details>
+      <div class="section-heading">
+        <div class="eyebrow">Find your perfect holiday</div>
+        <h2>Exceptional Holidays, Designed Around You</h2>
+        <p>
+          Whether you are planning a romantic escape, a family adventure
+          or a luxury getaway, explore a holiday that matches your style.
+        </p>
+      </div>
 
-      <details>
-        <summary>Can I request flights without a hotel?</summary>
-        <p>Yes. Select Flights in our enquiry form and provide your departure airport, destination, travel dates and passenger details.</p>
-      </details>
+      <div class="holiday-grid">
 
-      <details>
-        <summary>Can I enquire about hotels only?</summary>
-        <p>Yes. Select Hotels and share your destination, check-in and check-out dates, number of guests and room preferences.</p>
-      </details>
+        <article class="holiday-card">
+          <div class="holiday-icon">💎</div>
+          <h3>Luxury Holidays</h3>
+          <p>Explore exceptional hotels, elegant resorts and memorable experiences.</p>
+          <a href="#enquiry" class="text-link" data-holiday="Luxury Holiday">Enquire now →</a>
+        </article>
 
-      <details>
-        <summary>Can I request a personalised holiday package?</summary>
-        <p>Absolutely. Tell us your preferred destination, travel dates, number of travellers, budget and holiday preferences so we can explore suitable options.</p>
-      </details>
+        <article class="holiday-card">
+          <div class="holiday-icon">❤️</div>
+          <h3>Honeymoon Holidays</h3>
+          <p>Celebrate your love with romantic destinations, private villas and special experiences.</p>
+          <a href="#enquiry" class="text-link" data-holiday="Honeymoon">Enquire now →</a>
+        </article>
 
-      <details>
-        <summary>Can I review my enquiry before sending it?</summary>
-        <p>Yes. You can review your details and make changes before choosing to continue through WhatsApp or Email.</p>
-      </details>
+        <article class="holiday-card">
+          <div class="holiday-icon">👨‍👩‍👧‍👦</div>
+          <h3>Family Holidays</h3>
+          <p>Create lasting memories with family-friendly stays and exciting activities.</p>
+          <a href="#enquiry" class="text-link" data-holiday="Family Holiday">Enquire now →</a>
+        </article>
 
-      <details>
-        <summary>Is my enquiry submitted automatically?</summary>
-        <p>No. Your enquiry details will be prepared in WhatsApp or your email app. You must press Send to submit your message to our team.</p>
-      </details>
+        <article class="holiday-card">
+          <div class="holiday-icon">🏖️</div>
+          <h3>Beach Holidays</h3>
+          <p>Escape to beautiful beaches, tropical islands and relaxing seaside resorts.</p>
+          <a href="#enquiry" class="text-link" data-holiday="Beach Holiday">Enquire now →</a>
+        </article>
+
+        <article class="holiday-card">
+          <div class="holiday-icon">🌍</div>
+          <h3>Worldwide Holidays</h3>
+          <p>Explore destinations across Europe, Asia, the Middle East and beyond.</p>
+          <a href="#enquiry" class="text-link" data-holiday="Worldwide Holiday">Enquire now →</a>
+        </article>
+
+        <article class="holiday-card">
+          <div class="holiday-icon">✈️</div>
+          <h3>Tailor-Made Holidays</h3>
+          <p>Share your dates, preferences and budget to explore a personalised trip.</p>
+          <a href="#enquiry" class="text-link" data-holiday="Tailor-Made Holiday">Enquire now →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FLIGHTS AND HOTELS -->
+  <section>
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="eyebrow">Travel planning made simple</div>
+        <h2>Flights & Hotels</h2>
+        <p>
+          Looking for flights or accommodation separately?
+          Tell us what you need and enquire about suitable options.
+        </p>
+      </div>
+
+      <div class="service-grid">
+
+        <article class="service-card flight-card" id="flights">
+          <h3>Find Your Flights</h3>
+          <p>Share your departure airport, destination, dates and passenger requirements.</p>
+          <button class="button" type="button" data-enquiry="flight">
+            Request Flight Options →
+          </button>
+        </article>
+
+        <article class="service-card hotel-card" id="hotels">
+          <h3>Discover Your Stay</h3>
+          <p>Tell us your destination, preferred hotel category and accommodation needs.</p>
+          <button class="button" type="button" data-enquiry="hotel">
+            Request Hotel Options →
+          </button>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="pale-section" id="about">
+    <div class="container about-layout">
+
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1100&q=85"
+          alt="Beautiful mountain lake holiday destination" loading="lazy">
+      </div>
+
+      <div class="about-copy">
+        <div class="eyebrow">Welcome to You & Me Holidays</div>
+        <h2>Your Journey, Our Passion</h2>
+
+        <p>
+          At You & Me Holidays, we believe every great holiday begins
+          with understanding what matters most to you.
+        </p>
+
+        <p>
+          From luxury escapes and romantic honeymoons to memorable
+          family holidays and worldwide adventures, we are here to
+          help you explore destinations and discover experiences
+          you'll treasure.
+        </p>
+
+        <p>
+          We focus on personalised holiday planning, carefully
+          considered travel options and friendly customer service,
+          making it easier to plan a journey around your preferences,
+          travel dates and budget.
+        </p>
+
+        <p>
+          Whether you know exactly where you want to go or need
+          a little inspiration, let us help you take the next step
+          towards your perfect holiday.
+        </p>
+
+        <a href="#enquiry" class="button">Talk to Our Team</a>
+      </div>
 
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- WHY CHOOSE US -->
+  <section>
+    <div class="container">
 
-<section class="contact-banner">
-  <div class="container">
-    <h2>Your Next Adventure Starts Here</h2>
-    <p>Have a destination in mind? Let's start planning your journey.</p>
-    <a href="#enquiry" class="button">Start Your Enquiry</a>
-  </div>
-</section>
+      <div class="section-heading">
+        <div class="eyebrow">The You & Me experience</div>
+        <h2>Why Plan Your Holiday With Us?</h2>
+        <p>We want to make planning your next journey a simple and enjoyable experience.</p>
+      </div>
+
+      <div class="holiday-grid">
+
+        <article class="holiday-card">
+          <div class="holiday-icon">🌎</div>
+          <h3>Worldwide Destinations</h3>
+          <p>Explore travel possibilities and holiday inspiration from around the world.</p>
+        </article>
+
+        <article class="holiday-card">
+          <div class="holiday-icon">🤝</div>
+          <h3>Personal Assistance</h3>
+          <p>Share your travel plans and preferences with our team.</p>
+        </article>
+
+        <article class="holiday-card">
+          <div class="holiday-icon">✨</div>
+          <h3>Travel Your Way</h3>
+          <p>Explore options shaped around your interests, dates and budget.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ENQUIRY -->
+  <section class="enquiry-section" id="enquiry">
+    <span id="contact"></span>
+
+    <div class="container enquiry-layout">
+
+      <div class="enquiry-intro">
+        <div class="eyebrow">Start planning today</div>
+        <h2>Let's Plan Your Next Journey</h2>
+
+        <p>
+          Choose the service you need and complete the relevant details.
+          You will be able to review everything before choosing how to
+          send your enquiry.
+        </p>
+
+        <p>
+          Our team can then use your information to discuss suitable
+          travel options with you.
+        </p>
+
+        <p><strong>WhatsApp:</strong><br>
+          <a href="https://wa.me/923498519613" target="_blank" rel="noopener noreferrer">
+            +92 349 8519613
+          </a>
+        </p>
+
+        <p><strong>Email:</strong><br>
+          <a href="mailto:murtazarahi83@gmail.com">
+            murtazarahi83@gmail.com
+          </a>
+        </p>
+      </div>
+
+      <div>
+
+        <!-- MAIN FORM -->
+        <div class="enquiry-form" id="formPanel">
+          <h2 class="form-title">What Would You Like to Enquire About?</h2>
+
+          <div class="enquiry-choice">
+            <button type="button" class="choice-button active" data-type="package">
+              <span>🏖️</span>Holiday
+            </button>
+
+            <button type="button" class="choice-button" data-type="flight">
+              <span>✈️</span>Flights
+            </button>
+
+            <button type="button" class="choice-button" data-type="hotel">
+              <span>🏨</span>Hotels
+            </button>
+          </div>
+
+          <form id="travelForm">
+            <div class="form-grid" id="dynamicFields"></div>
+
+            <button class="button" type="submit">
+              Review My Enquiry →
+            </button>
+
+            <p class="form-note">
+              Your details are not sent automatically. You can review
+              and edit your information before choosing WhatsApp or Email.
+            </p>
+          </form>
+        </div>
+
+        <!-- REVIEW -->
+        <div class="review-panel hidden" id="reviewPanel">
+          <h2 class="review-title">Review Your Enquiry</h2>
+          <p class="review-subtitle">
+            Please check your travel details carefully before continuing.
+          </p>
+
+          <div id="reviewDetails"></div>
+
+          <div class="review-actions">
+            <button type="button" class="secondary-button" id="editDetails">
+              ← Edit My Details
+            </button>
+
+            <button type="button" class="button" id="confirmDetails">
+              Continue to Contact Options →
+            </button>
+          </div>
+        </div>
+
+        <!-- SEND OPTIONS -->
+        <div class="review-panel hidden" id="sendPanel">
+          <h2 class="review-title">How Would You Like to Send It?</h2>
+          <p class="review-subtitle">
+            Choose your preferred way to contact You & Me Holidays.
+          </p>
+
+          <div class="channel-card">
+            <div>
+              <h3>Send through WhatsApp</h3>
+              <p>Open WhatsApp with your enquiry message prepared.</p>
+            </div>
+            <button type="button" class="button" id="sendWhatsApp">
+              WhatsApp →
+            </button>
+          </div>
+
+          <div class="channel-card">
+            <div>
+              <h3>Send through Email</h3>
+              <p>Open an email with your enquiry details prepared.</p>
+            </div>
+            <button type="button" class="button" id="sendEmail">
+              Email →
+            </button>
+          </div>
+
+          <div style="margin-top:20px">
+            <button type="button" class="secondary-button" id="backToReview">
+              ← Back to Review
+            </button>
+          </div>
+
+          <p class="form-note">
+            WhatsApp and email will open a prepared message.
+            You must press Send in the relevant app to submit your enquiry.
+          </p>
+        </div>
+
+        <!-- THANK YOU -->
+        <div class="thank-panel hidden" id="thankPanel">
+          <div class="tick-circle">✓</div>
+
+          <h2 class="thank-title">Thank You!</h2>
+
+          <p class="thank-subtitle">
+            Thank you for choosing You & Me Holidays.
+            We look forward to helping you plan your next journey.
+          </p>
+
+          <div class="pale-section" style="padding:19px;border-radius:10px;margin-bottom:21px">
+            <strong style="color:var(--navy)">One last step</strong>
+            <p style="font-size:13px;color:var(--muted);margin-top:6px">
+              Please press Send in WhatsApp or your email app to complete
+              your enquiry. Your message is not received by us until you send it.
+            </p>
+          </div>
+
+          <a href="#home" class="button">Back to Home</a>
+
+          <p style="margin-top:20px;color:var(--blue);font-weight:800">
+            YOU & ME HOLIDAYS
+          </p>
+
+          <p style="font-size:13px;color:var(--muted)">
+            Your Journey, Our Passion.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+
+      <div class="section-heading">
+        <div class="eyebrow">Here to help</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to common questions about planning your next holiday with us.</p>
+      </div>
+
+      <div class="faq-list">
+
+        <details>
+          <summary>Which destinations can I enquire about?</summary>
+          <p>You can enquire about holidays to destinations around the world. Tell us where you would like to travel and our team can help you explore suitable options.</p>
+        </details>
+
+        <details>
+          <summary>Can I request flights without a hotel?</summary>
+          <p>Yes. Select Flights in our enquiry form and provide your departure airport, destination, travel dates and passenger details.</p>
+        </details>
+
+        <details>
+          <summary>Can I enquire about hotels only?</summary>
+          <p>Yes. Select Hotels and share your destination, check-in and check-out dates, number of guests and room preferences.</p>
+        </details>
+
+        <details>
+          <summary>Can I request a personalised holiday package?</summary>
+          <p>Yes. Tell us your preferred destination, travel dates, number of travellers, budget and holiday preferences so we can explore suitable options.</p>
+        </details>
+
+        <details>
+          <summary>Can I review my enquiry before sending it?</summary>
+          <p>Yes. You can review your details and make changes before choosing to continue through WhatsApp or Email.</p>
+        </details>
+
+        <details>
+          <summary>Is my enquiry submitted automatically?</summary>
+          <p>No. Your enquiry details will be prepared in WhatsApp or your email app. You must press Send to submit your message to our team.</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT BANNER -->
+  <section class="contact-banner">
+    <div class="container">
+      <h2>Your Next Adventure Starts Here</h2>
+      <p>Have a destination in mind? Let's start planning your journey.</p>
+      <a href="#enquiry" class="button">Start Your Enquiry</a>
+    </div>
+  </section>
+
 </main>
 
+<!-- FOOTER -->
 <footer>
   <div class="container">
+
     <div class="footer-grid">
-      <div><div class="footer-brand">YOU & ME <span>HOLIDAYS</span></div><p>Your Journey, Our Passion.</p><p>Discover the world and start planning your next holiday with us.</p></div>
-      <div><h3>Explore</h3><a href="#destinations">Destinations</a><a href="#packages">Holiday Packages</a><a href="#flights">Flights</a><a href="#hotels">Hotels</a></div>
-      <div><h3>Get in Touch</h3><a href="#about">About Us</a><a href="#enquiry">Contact Us</a><a href="#faq">FAQs</a><a href="https://wa.me/923498519613" target="_blank" rel="noopener noreferrer">WhatsApp Us</a><a href="mailto:murtazarahi83@gmail.com">Email Us</a></div>
+
+      <div>
+        <div class="footer-brand">YOU & ME <span>HOLIDAYS</span></div>
+        <p>Your Journey, Our Passion.</p>
+        <p>Discover the world and start planning your next holiday with us.</p>
+      </div>
+
+      <div>
+        <h3>Explore</h3>
+        <a href="#destinations">Destinations</a>
+        <a href="#packages">Holiday Types</a>
+        <a href="#flights">Flights</a>
+        <a href="#hotels">Hotels</a>
+      </div>
+
+      <div>
+        <h3>Get in Touch</h3>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#faq">FAQs</a>
+        <a href="https://wa.me/923498519613" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
+        <a href="mailto:murtazarahi83@gmail.com">Email Us</a>
+      </div>
+
     </div>
-    <div class="copyright">© 2026 You & Me Holidays. All rights reserved.</div>
+
+    <div class="copyright">
+      © 2026 You & Me Holidays. All rights reserved.
+    </div>
+
   </div>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/923498519613" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">☎</a>
+<a class="whatsapp-float"
+   href="https://wa.me/923498519613"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Contact us on WhatsApp">☎</a>
 
 <script>
-/* CONTACT SETTINGS - CHANGE THESE DETAILS IN FUTURE */
+/* BUSINESS CONTACT DETAILS */
 const WHATSAPP_NUMBER = "923498519613";
 const BUSINESS_EMAIL = "murtazarahi83@gmail.com";
 
@@ -513,72 +1501,367 @@ const BUSINESS_EMAIL = "murtazarahi83@gmail.com";
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
 
-menuToggle.addEventListener("click", function () {
-  const open = mainNav.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", open);
-  menuToggle.textContent = open ? "✕" : "☰";
+menuToggle.addEventListener("click", function() {
+  const isOpen = mainNav.classList.toggle("open");
+
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute(
+    "aria-label",
+    isOpen ? "Close navigation menu" : "Open navigation menu"
+  );
+
+  menuToggle.textContent = isOpen ? "✕" : "☰";
 });
 
 mainNav.querySelectorAll("a").forEach(link => {
   link.addEventListener("click", () => {
     mainNav.classList.remove("open");
     menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Open navigation menu");
     menuToggle.textContent = "☰";
   });
 });
 
-/* FIELD DEFINITIONS FOR EACH SERVICE */
+/* COMMON CUSTOMER DETAILS */
 const commonFields = [
-  {name:"name",label:"Full Name",type:"text",placeholder:"Your full name",required:true},
-  {name:"email",label:"Email Address",type:"email",placeholder:"Your email address",required:true},
-  {name:"phone",label:"Contact Number",type:"tel",placeholder:"Your phone number",required:true}
+  {
+    name:"name",
+    label:"Full Name",
+    type:"text",
+    placeholder:"Your full name",
+    required:true
+  },
+  {
+    name:"email",
+    label:"Email Address",
+    type:"email",
+    placeholder:"Your email address",
+    required:true
+  },
+  {
+    name:"phone",
+    label:"Contact Number",
+    type:"tel",
+    placeholder:"Your phone number",
+    required:true
+  }
 ];
 
+/* FORM FIELDS */
 const fieldSets = {
+
   package: [
     ...commonFields,
-    {name:"destination",label:"Destination",type:"text",placeholder:"e.g. Dubai, Maldives, Italy",required:true},
-    {name:"departure",label:"Departure Airport",type:"text",placeholder:"e.g. London Heathrow"},
-    {name:"departDate",label:"Departure Date",type:"date",required:true},
-    {name:"returnDate",label:"Return Date",type:"date"},
-    {name:"adults",label:"Number of Adults",type:"number",min:1,value:2,required:true},
-    {name:"children",label:"Number of Children",type:"number",min:0,value:0},
-    {name:"budget",label:"Approximate Budget",type:"select",options:["Below £1,000","£1,000 - £2,000","£2,000 - £3,000","£3,000 - £5,000","£5,000 - £8,000","£8,000+","Not decided yet"]},
-    {name:"hotel",label:"Hotel Category",type:"select",options:["3 Star","4 Star","5 Star","Luxury / Premium","Not sure yet"]},
-    {name:"board",label:"Board Basis",type:"select",options:["Room Only","Bed & Breakfast","Half Board","Full Board","All Inclusive","Not sure yet"]},
-    {name:"holidayStyle",label:"Holiday Type",type:"select",options:["Luxury Holiday","Honeymoon","Family Holiday","Beach Holiday","City Break","Tailor-Made","Other"]},
-    {name:"duration",label:"Duration / Nights",type:"text",placeholder:"e.g. 7 nights"},
-    {name:"requirements",label:"Additional Requirements",type:"textarea",full:true,placeholder:"Tell us about your preferences or special requests..."}
+
+    {
+      name:"destination",
+      label:"Destination",
+      type:"text",
+      placeholder:"e.g. Dubai, Maldives, Italy",
+      required:true
+    },
+    {
+      name:"departure",
+      label:"Departure Airport",
+      type:"text",
+      placeholder:"e.g. London Heathrow"
+    },
+    {
+      name:"departDate",
+      label:"Departure Date",
+      type:"date",
+      required:true
+    },
+    {
+      name:"returnDate",
+      label:"Return Date",
+      type:"date"
+    },
+    {
+      name:"adults",
+      label:"Number of Adults",
+      type:"number",
+      min:1,
+      value:2,
+      required:true
+    },
+    {
+      name:"children",
+      label:"Number of Children",
+      type:"number",
+      min:0,
+      value:0
+    },
+    {
+      name:"budget",
+      label:"Approximate Total Budget",
+      type:"select",
+      options:[
+        "Below £1,000",
+        "£1,000 - £2,000",
+        "£2,000 - £3,000",
+        "£3,000 - £5,000",
+        "£5,000 - £8,000",
+        "£8,000+",
+        "Not decided yet"
+      ]
+    },
+    {
+      name:"hotel",
+      label:"Hotel Category",
+      type:"select",
+      options:[
+        "3 Star",
+        "4 Star",
+        "5 Star",
+        "Luxury / Premium",
+        "Not sure yet"
+      ]
+    },
+    {
+      name:"board",
+      label:"Board Basis",
+      type:"select",
+      options:[
+        "Room Only",
+        "Bed & Breakfast",
+        "Half Board",
+        "Full Board",
+        "All Inclusive",
+        "Not sure yet"
+      ]
+    },
+    {
+      name:"holidayStyle",
+      label:"Holiday Type",
+      type:"select",
+      options:[
+        "Luxury Holiday",
+        "Honeymoon",
+        "Family Holiday",
+        "Beach Holiday",
+        "City Break",
+        "Tailor-Made",
+        "Other"
+      ]
+    },
+    {
+      name:"duration",
+      label:"Duration / Nights",
+      type:"text",
+      placeholder:"e.g. 7 nights"
+    },
+    {
+      name:"requirements",
+      label:"Additional Requirements",
+      type:"textarea",
+      full:true,
+      placeholder:"Tell us about your preferences or special requests..."
+    }
   ],
+
   flight: [
     ...commonFields,
-    {name:"tripType",label:"Journey Type",type:"select",options:["Return","One Way","Multi-City"],required:true},
-    {name:"from",label:"Departure Airport / City",type:"text",placeholder:"e.g. London Heathrow",required:true},
-    {name:"to",label:"Destination Airport / City",type:"text",placeholder:"e.g. Dubai",required:true},
-    {name:"departDate",label:"Departure Date",type:"date",required:true},
-    {name:"returnDate",label:"Return Date",type:"date"},
-    {name:"adults",label:"Number of Adults",type:"number",min:1,value:1,required:true},
-    {name:"children",label:"Number of Children",type:"number",min:0,value:0},
-    {name:"infants",label:"Number of Infants",type:"number",min:0,value:0},
-    {name:"cabin",label:"Cabin Class",type:"select",options:["Economy","Premium Economy","Business Class","First Class","Flexible"]},
-    {name:"airline",label:"Preferred Airline",type:"text",placeholder:"Optional"},
-    {name:"stops",label:"Flight Preference",type:"select",options:["Direct Only","One Stop Acceptable","Any Suitable Flight"]},
-    {name:"baggage",label:"Baggage Preference",type:"select",options:["Cabin Bag Only","Checked Baggage","Both","Not Sure"]},
-    {name:"requirements",label:"Additional Requirements",type:"textarea",full:true,placeholder:"Any special flight requests..."}
+
+    {
+      name:"tripType",
+      label:"Journey Type",
+      type:"select",
+      options:["Return","One Way"],
+      required:true
+    },
+    {
+      name:"from",
+      label:"Departure Airport / City",
+      type:"text",
+      placeholder:"e.g. London Heathrow",
+      required:true
+    },
+    {
+      name:"to",
+      label:"Destination Airport / City",
+      type:"text",
+      placeholder:"e.g. Dubai",
+      required:true
+    },
+    {
+      name:"departDate",
+      label:"Departure Date",
+      type:"date",
+      required:true
+    },
+    {
+      name:"returnDate",
+      label:"Return Date",
+      type:"date"
+    },
+    {
+      name:"adults",
+      label:"Number of Adults",
+      type:"number",
+      min:1,
+      value:1,
+      required:true
+    },
+    {
+      name:"children",
+      label:"Number of Children",
+      type:"number",
+      min:0,
+      value:0
+    },
+    {
+      name:"infants",
+      label:"Number of Infants",
+      type:"number",
+      min:0,
+      value:0
+    },
+    {
+      name:"cabin",
+      label:"Cabin Class",
+      type:"select",
+      options:[
+        "Economy",
+        "Premium Economy",
+        "Business Class",
+        "First Class",
+        "Flexible"
+      ]
+    },
+    {
+      name:"airline",
+      label:"Preferred Airline",
+      type:"text",
+      placeholder:"Optional"
+    },
+    {
+      name:"stops",
+      label:"Flight Preference",
+      type:"select",
+      options:[
+        "Direct Only",
+        "One Stop Acceptable",
+        "Any Suitable Flight"
+      ]
+    },
+    {
+      name:"baggage",
+      label:"Baggage Preference",
+      type:"select",
+      options:[
+        "Cabin Bag Only",
+        "Checked Baggage",
+        "Both",
+        "Not Sure"
+      ]
+    },
+    {
+      name:"requirements",
+      label:"Additional Requirements",
+      type:"textarea",
+      full:true,
+      placeholder:"Any special flight requests..."
+    }
   ],
+
   hotel: [
     ...commonFields,
-    {name:"destination",label:"Hotel Destination / City",type:"text",placeholder:"e.g. Dubai",required:true},
-    {name:"checkin",label:"Check-in Date",type:"date",required:true},
-    {name:"checkout",label:"Check-out Date",type:"date",required:true},
-    {name:"rooms",label:"Number of Rooms",type:"number",min:1,value:1,required:true},
-    {name:"adults",label:"Number of Adults",type:"number",min:1,value:2,required:true},
-    {name:"children",label:"Number of Children",type:"number",min:0,value:0},
-    {name:"category",label:"Hotel Category",type:"select",options:["3 Star","4 Star","5 Star","Luxury / Premium","Any Suitable Category"]},
-    {name:"board",label:"Board Basis",type:"select",options:["Room Only","Bed & Breakfast","Half Board","Full Board","All Inclusive","Not Sure"]},
-    {name:"room",label:"Room Preference",type:"select",options:["Standard Room","Deluxe Room","Family Room","Suite","Sea View","Private Pool","Any Suitable Room"]},
-    {name:"budget",label:"Approximate Hotel Budget",type:"text",placeholder:"e.g. £150 per night"},
-    {name:"requirements",label:"Additional Requirements",type:"textarea",full:true,placeholder:"Any hotel or room preferences..."}
+
+    {
+      name:"destination",
+      label:"Hotel Destination / City",
+      type:"text",
+      placeholder:"e.g. Dubai",
+      required:true
+    },
+    {
+      name:"checkin",
+      label:"Check-in Date",
+      type:"date",
+      required:true
+    },
+    {
+      name:"checkout",
+      label:"Check-out Date",
+      type:"date",
+      required:true
+    },
+    {
+      name:"rooms",
+      label:"Number of Rooms",
+      type:"number",
+      min:1,
+      value:1,
+      required:true
+    },
+    {
+      name:"adults",
+      label:"Number of Adults",
+      type:"number",
+      min:1,
+      value:2,
+      required:true
+    },
+    {
+      name:"children",
+      label:"Number of Children",
+      type:"number",
+      min:0,
+      value:0
+    },
+    {
+      name:"category",
+      label:"Hotel Category",
+      type:"select",
+      options:[
+        "3 Star",
+        "4 Star",
+        "5 Star",
+        "Luxury / Premium",
+        "Any Suitable Category"
+      ]
+    },
+    {
+      name:"board",
+      label:"Board Basis",
+      type:"select",
+      options:[
+        "Room Only",
+        "Bed & Breakfast",
+        "Half Board",
+        "Full Board",
+        "All Inclusive",
+        "Not Sure"
+      ]
+    },
+    {
+      name:"room",
+      label:"Room Preference",
+      type:"select",
+      options:[
+        "Standard Room",
+        "Deluxe Room",
+        "Family Room",
+        "Suite",
+        "Sea View",
+        "Private Pool",
+        "Any Suitable Room"
+      ]
+    },
+    {
+      name:"budget",
+      label:"Approximate Hotel Budget",
+      type:"text",
+      placeholder:"e.g. £150 per night"
+    },
+    {
+      name:"requirements",
+      label:"Additional Requirements",
+      type:"textarea",
+      full:true,
+      placeholder:"Any hotel or room preferences..."
+    }
   ]
 };
 
@@ -589,7 +1872,7 @@ const labels = {
 };
 
 let currentType = "package";
-let enquiryData = null;
+let enquiryData = {};
 let enquiryMessage = "";
 
 const formPanel = document.getElementById("formPanel");
@@ -599,18 +1882,25 @@ const thankPanel = document.getElementById("thankPanel");
 const dynamicFields = document.getElementById("dynamicFields");
 const travelForm = document.getElementById("travelForm");
 
+/* SHOW THE CORRECT STEP */
 function showPanel(panel) {
-  [formPanel,reviewPanel,sendPanel,thankPanel].forEach(p => p.classList.add("hidden"));
+  [formPanel,reviewPanel,sendPanel,thankPanel].forEach(item => {
+    item.classList.add("hidden");
+  });
+
   panel.classList.remove("hidden");
 }
 
+/* CREATE FORM INPUTS */
 function makeField(field) {
   const group = document.createElement("div");
+
   group.className = "form-group" + (field.full ? " full" : "");
 
   const label = document.createElement("label");
   label.htmlFor = "field-" + field.name;
   label.textContent = field.label + (field.required ? " *" : "");
+
   group.appendChild(label);
 
   let input;
@@ -618,31 +1908,98 @@ function makeField(field) {
   if (field.type === "select") {
     input = document.createElement("select");
     input.add(new Option("Select an option", ""));
-    field.options.forEach(option => input.add(new Option(option, option)));
+
+    field.options.forEach(option => {
+      input.add(new Option(option, option));
+    });
+
   } else if (field.type === "textarea") {
     input = document.createElement("textarea");
     input.placeholder = field.placeholder || "";
+
   } else {
     input = document.createElement("input");
     input.type = field.type;
     input.placeholder = field.placeholder || "";
-    if (field.min !== undefined) input.min = field.min;
-    if (field.value !== undefined) input.value = field.value;
+
+    if (field.min !== undefined) {
+      input.min = field.min;
+    }
+
+    if (field.value !== undefined) {
+      input.value = field.value;
+    }
   }
 
   input.id = "field-" + field.name;
   input.name = field.name;
-  if (field.required) input.required = true;
+
+  if (field.required) {
+    input.required = true;
+  }
+
   group.appendChild(input);
+
   return group;
 }
 
+/* DATE VALIDATION */
+function updateDateRules() {
+  const departure = dynamicFields.querySelector('[name="departDate"]');
+  const returnDate = dynamicFields.querySelector('[name="returnDate"]');
+  const checkin = dynamicFields.querySelector('[name="checkin"]');
+  const checkout = dynamicFields.querySelector('[name="checkout"]');
+  const tripType = dynamicFields.querySelector('[name="tripType"]');
+
+  if (departure && returnDate) {
+    returnDate.min = departure.value || "";
+
+    if (currentType === "flight") {
+      const isReturn = tripType && tripType.value === "Return";
+
+      returnDate.required = Boolean(isReturn);
+
+      const group = returnDate.closest(".form-group");
+      group.classList.toggle("hidden", Boolean(tripType && !isReturn));
+
+      if (!isReturn) {
+        returnDate.value = "";
+      }
+    }
+
+    if (returnDate.value && departure.value &&
+        returnDate.value <= departure.value) {
+      returnDate.setCustomValidity("Return date must be after departure date.");
+    } else {
+      returnDate.setCustomValidity("");
+    }
+  }
+
+  if (checkin && checkout) {
+    checkout.min = checkin.value || "";
+
+    if (checkout.value && checkin.value &&
+        checkout.value <= checkin.value) {
+      checkout.setCustomValidity("Check-out must be after check-in.");
+    } else {
+      checkout.setCustomValidity("");
+    }
+  }
+}
+
+/* DRAW THE SELECTED FORM */
 function renderForm() {
   dynamicFields.innerHTML = "";
-  fieldSets[currentType].forEach(field => dynamicFields.appendChild(makeField(field)));
+
+  fieldSets[currentType].forEach(field => {
+    dynamicFields.appendChild(makeField(field));
+  });
 
   document.querySelectorAll(".choice-button").forEach(button => {
-    button.classList.toggle("active", button.dataset.type === currentType);
+    button.classList.toggle(
+      "active",
+      button.dataset.type === currentType
+    );
   });
 
   const titles = {
@@ -650,36 +2007,98 @@ function renderForm() {
     flight:"Flight Details",
     hotel:"Hotel Details"
   };
-  document.querySelector("#formPanel .form-title").textContent = titles[currentType];
+
+  document.querySelector("#formPanel .form-title").textContent =
+    titles[currentType];
+
+  updateDateRules();
 }
 
+/* CHANGE ENQUIRY TYPE */
 function chooseType(type) {
   currentType = type;
+
+  enquiryData = {};
+  enquiryMessage = "";
+
   renderForm();
   showPanel(formPanel);
-  document.getElementById("enquiry").scrollIntoView({behavior:"smooth"});
+
+  document.getElementById("enquiry").scrollIntoView({
+    behavior:"smooth",
+    block:"start"
+  });
 }
 
 document.querySelectorAll(".choice-button").forEach(button => {
-  button.addEventListener("click", () => chooseType(button.dataset.type));
+  button.addEventListener("click", () => {
+    chooseType(button.dataset.type);
+  });
 });
 
 document.querySelectorAll("[data-enquiry]").forEach(button => {
-  button.addEventListener("click", () => chooseType(button.dataset.enquiry));
+  button.addEventListener("click", () => {
+    chooseType(button.dataset.enquiry);
+  });
 });
 
-/* READ AND FORMAT THE CUSTOMER'S FORM */
+/* DESTINATION AND HOLIDAY LINKS PRE-FILL THE FORM */
+document.querySelectorAll("[data-destination]").forEach(link => {
+  link.addEventListener("click", () => {
+    currentType = "package";
+    renderForm();
+
+    const destination = dynamicFields.querySelector('[name="destination"]');
+
+    if (destination) {
+      destination.value = link.dataset.destination;
+    }
+
+    showPanel(formPanel);
+  });
+});
+
+document.querySelectorAll("[data-holiday]").forEach(link => {
+  link.addEventListener("click", () => {
+    currentType = "package";
+    renderForm();
+
+    const holidayType = dynamicFields.querySelector('[name="holidayStyle"]');
+
+    if (holidayType) {
+      holidayType.value = link.dataset.holiday;
+    }
+
+    showPanel(formPanel);
+  });
+});
+
+/* UPDATE DATE RULES WHEN CUSTOMER CHANGES DATES */
+dynamicFields.addEventListener("change", updateDateRules);
+dynamicFields.addEventListener("input", updateDateRules);
+
+/* READ CUSTOMER DETAILS */
 travelForm.addEventListener("submit", function(event) {
   event.preventDefault();
 
+  updateDateRules();
+
+  if (!travelForm.reportValidity()) {
+    return;
+  }
+
   const formData = new FormData(travelForm);
   enquiryData = {};
-  fieldSets[currentType].forEach(field => {
-    const value = (formData.get(field.name) || "").toString().trim();
-    if (value) enquiryData[field.label] = value;
-  });
 
   enquiryData["Enquiry Type"] = labels[currentType];
+
+  fieldSets[currentType].forEach(field => {
+    const value = (formData.get(field.name) || "").toString().trim();
+
+    if (value) {
+      enquiryData[field.label] = value;
+    }
+  });
 
   const lines = [
     "Hello You & Me Holidays!",
@@ -690,22 +2109,29 @@ travelForm.addEventListener("submit", function(event) {
   ];
 
   Object.entries(enquiryData).forEach(([key,value]) => {
-    if (key !== "Enquiry Type") lines.push(key + ": " + value);
+    if (key !== "Enquiry Type") {
+      lines.push(key + ": " + value);
+    }
   });
 
   lines.push("");
-  lines.push("Please contact me to discuss the available options. Thank you.");
+  lines.push("Please contact me to discuss suitable options. Thank you.");
 
   enquiryMessage = lines.join("\n");
 
   renderReview();
   showPanel(reviewPanel);
-  reviewPanel.scrollIntoView({behavior:"smooth",block:"start"});
+
+  reviewPanel.scrollIntoView({
+    behavior:"smooth",
+    block:"start"
+  });
 });
 
-/* DISPLAY DETAILS BEFORE CUSTOMER CONFIRMS */
+/* DISPLAY THE REVIEW */
 function renderReview() {
   const container = document.getElementById("reviewDetails");
+
   container.innerHTML = "";
 
   Object.entries(enquiryData).forEach(([key,value]) => {
@@ -724,45 +2150,78 @@ function renderReview() {
   });
 }
 
-/* CUSTOMER CAN EDIT */
+/* RETURN TO EDIT THE FORM */
 document.getElementById("editDetails").addEventListener("click", function() {
   showPanel(formPanel);
-  formPanel.scrollIntoView({behavior:"smooth",block:"start"});
+
+  formPanel.scrollIntoView({
+    behavior:"smooth",
+    block:"start"
+  });
 });
 
-/* CONFIRM AND CHOOSE CONTACT METHOD */
+/* CONFIRM DETAILS */
 document.getElementById("confirmDetails").addEventListener("click", function() {
   showPanel(sendPanel);
-  sendPanel.scrollIntoView({behavior:"smooth",block:"start"});
+
+  sendPanel.scrollIntoView({
+    behavior:"smooth",
+    block:"start"
+  });
 });
 
+/* BACK TO REVIEW */
 document.getElementById("backToReview").addEventListener("click", function() {
   showPanel(reviewPanel);
-  reviewPanel.scrollIntoView({behavior:"smooth",block:"start"});
+
+  reviewPanel.scrollIntoView({
+    behavior:"smooth",
+    block:"start"
+  });
 });
 
-/* OPEN WHATSAPP WITH THE CUSTOMER'S ENQUIRY */
+/* OPEN WHATSAPP */
 document.getElementById("sendWhatsApp").addEventListener("click", function() {
-  const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(enquiryMessage);
+  if (!enquiryMessage) {
+    return;
+  }
+
+  const url =
+    "https://wa.me/" + WHATSAPP_NUMBER +
+    "?text=" + encodeURIComponent(enquiryMessage);
+
   window.open(url, "_blank");
+
   showPanel(thankPanel);
-  thankPanel.scrollIntoView({behavior:"smooth",block:"start"});
+
+  thankPanel.scrollIntoView({
+    behavior:"smooth",
+    block:"start"
+  });
 });
 
-/* OPEN THE CUSTOMER'S EMAIL APP WITH THE ENQUIRY */
+/* OPEN EMAIL */
 document.getElementById("sendEmail").addEventListener("click", function() {
-  const subject = "New " + labels[currentType] + " - You & Me Holidays";
-  const mailto = "mailto:" + BUSINESS_EMAIL +
+  if (!enquiryMessage) {
+    return;
+  }
+
+  const subject =
+    "New " + labels[currentType] + " - You & Me Holidays";
+
+  const mailto =
+    "mailto:" + BUSINESS_EMAIL +
     "?subject=" + encodeURIComponent(subject) +
     "&body=" + encodeURIComponent(enquiryMessage);
 
   window.location.href = mailto;
+
   showPanel(thankPanel);
-  thankPanel.scrollIntoView({behavior:"smooth",block:"start"});
 });
 
-/* START WITH HOLIDAY PACKAGE FORM */
+/* START WITH HOLIDAY ENQUIRY */
 renderForm();
 </script>
+
 </body>
 </html>
