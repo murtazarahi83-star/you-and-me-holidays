@@ -2479,6 +2479,7 @@ if (requestedDestination) {
   renderForm();
 
   const destinationField = dynamicFields.querySelector('[name="destination"]');
+
   if (destinationField) {
     destinationField.value = requestedDestination;
   }
@@ -2489,6 +2490,7 @@ if (requestedHoliday) {
   renderForm();
 
   const holidayField = dynamicFields.querySelector('[name="holidayStyle"]');
+
   if (holidayField) {
     const matchingOption = Array.from(holidayField.options).find(
       option => option.value.toLowerCase() === requestedHoliday.toLowerCase()
