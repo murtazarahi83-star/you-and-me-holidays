@@ -2469,38 +2469,6 @@ document.getElementById("sendEmail").addEventListener("click", function() {
 
 /* START WITH HOLIDAY ENQUIRY */
 renderForm();
-
-const enquiryParams = new URLSearchParams(window.location.search);
-const requestedDestination = enquiryParams.get("destination");
-const requestedHoliday = enquiryParams.get("holiday");
-
-if (requestedDestination) {
-  currentType = "package";
-  renderForm();
-
-  const destinationField = dynamicFields.querySelector('[name="destination"]');
-
-  if (destinationField) {
-    destinationField.value = requestedDestination;
-  }
-}
-
-if (requestedHoliday) {
-  currentType = "package";
-  renderForm();
-
-  const holidayField = dynamicFields.querySelector('[name="holidayStyle"]');
-
-  if (holidayField) {
-    const matchingOption = Array.from(holidayField.options).find(
-      option => option.value.toLowerCase() === requestedHoliday.toLowerCase()
-    );
-
-    if (matchingOption) {
-      holidayField.value = matchingOption.value;
-    }
-  }
-}
 </script>
 
 </body>
