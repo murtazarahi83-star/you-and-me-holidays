@@ -2027,7 +2027,7 @@ if (requestedHoliday) {
   const holidayField = dynamicFields.querySelector('[name="holidayStyle"]');
   if (holidayField) {
     const matchingOption = Array.from(holidayField.options).find(
-      option => option.value.toLowerCase() === requestedHoliday.toLowerCase()
+     option => option.value.trim().toLowerCase() === requestedHoliday.trim().toLowerCase()
     );
 
     if (matchingOption) {
