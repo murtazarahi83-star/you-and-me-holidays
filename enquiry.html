@@ -2009,21 +2009,32 @@ renderForm();
 
 const enquiryParams = new URLSearchParams(window.location.search);
 const requestedDestination = enquiryParams.get("destination");
+
 const requestedHoliday = enquiryParams.get("holiday");
+const requestedDestination = enquiryParams.get("destination");
 
 if (requestedDestination || requestedHoliday) {
   currentType = "package";
   renderForm();
+
   requestAnimationFrame(() => {
     if (requestedHoliday) {
       const holidayField = dynamicFields.querySelector('[name="holidayStyle"]');
+
       if (holidayField) {
-        holidayField.value = requestedHoliday;
+        const matchingOption = Array.from(holidayField.options).find(
+          option => option.value.trim().toLowerCase() === requestedHoliday.trim().toLowerCase()
+        );
+
+        if (matchingOption) {
+          holidayField.value = matchingOption.value;
+        }
       }
     }
 
     if (requestedDestination) {
       const destinationField = dynamicFields.querySelector('[name="destination"]');
+
       if (destinationField) {
         destinationField.value = requestedDestination;
       }
@@ -2031,20 +2042,6 @@ if (requestedDestination || requestedHoliday) {
   });
 }
 
-if (requestedDestination) {
-  const destinationField = dynamicFields.querySelector('[name="destination"]');
-  if (destinationField) {
-    destinationField.value = requestedDestination;
-  }
-}
-
-if (requestedHoliday) {
-  const holidayField = dynamicFields.querySelector('[name="holidayStyle"]');
-
-  if (holidayField) {
-    holidayField.value = requestedHoliday;
-  }
-}
 </script>
 
 </body>
